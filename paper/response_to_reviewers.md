@@ -34,7 +34,7 @@ Where: Section V-A, third paragraph.
 
 The revision no longer treats holdout labels as ground truth. The holdout counts are now shown in Fig. 2, split into holdout failures and holdout passes, and the caption states that the counts are observations from an independent sample. For geometric acceptance, 595 of 896 candidates fell below the 0.85 threshold on the holdout, an observed rate of 66.4 percent with a 95 percent Wilson interval of 63.2 to 69.4 percent. For the two calibrated rules, the revision reports the one-sided 97.5 percent Clopper-Pearson upper bound on the failure rate, 1.6 percent for 223 retained candidates and 2.0 percent for 180. The text states that a zero count is not evidence of zero risk. The earlier phrase about known false acceptance or rejection has been removed.
 
-Where: Section V-D and Table II.
+Where: Section V-D and Fig. 2.
 
 ## Other changes required by the page limit
 
