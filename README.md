@@ -10,7 +10,7 @@ Paper and supplementary material for the conference version of this work.
 
 | Path | Content |
 |---|---|
-| `paper/` | Conference paper (4 pages) and LaTeX source |
+| `paper/` | Conference paper (4 pages), LaTeX source and the response to reviewers |
 | `code/src/psr_planner/` | Planner: risk calibration, grouped dynamic programming, lazy certificate solver, forced-edge screening, MST baseline, motion oracles |
 | `code/experiments/` | All experiment scripts, including the 18-instance Hybrid A* suite, the 12-instance real-map suite, the MST baseline, repeated timing and the expansion-budget check |
 | `code/results/` | Per-instance result files used in the paper |
