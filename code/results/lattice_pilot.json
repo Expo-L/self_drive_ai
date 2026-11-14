@@ -1,0 +1,52 @@
+{
+  "status": "discrete_se2_lattice_pilot",
+  "grid": {
+    "width": 31,
+    "height": 31,
+    "resolution": 0.2,
+    "blocked_cells": 96
+  },
+  "full_matrix": {
+    "objective": 13.928326112068525,
+    "exact_edge_evaluations": 195,
+    "expanded_states": 241757,
+    "group_order": [
+      "T1",
+      "T5",
+      "T4",
+      "T3",
+      "T2"
+    ],
+    "poses": [
+      "T1:r1:a0",
+      "T5:r1:a2",
+      "T4:r1:a0",
+      "T3:r1:a1",
+      "T2:r1:a0"
+    ]
+  },
+  "bounded_lazy": {
+    "objective": 13.928326112068524,
+    "lower_bound": 13.928326112068525,
+    "upper_bound": 13.928326112068524,
+    "relative_gap": 0.0,
+    "exact_edge_evaluations": 50,
+    "expanded_states": 48426,
+    "group_order": [
+      "T1",
+      "T5",
+      "T4",
+      "T3",
+      "T2"
+    ],
+    "poses": [
+      "T1:r1:a0",
+      "T5:r1:a2",
+      "T4:r1:a0",
+      "T3:r1:a1",
+      "T2:r1:a0"
+    ]
+  },
+  "query_reduction": 0.7435897435897436,
+  "state_expansion_reduction": 0.7996914256877774
+}

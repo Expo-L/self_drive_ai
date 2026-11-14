@@ -1,0 +1,463 @@
+{
+  "status": "hybrid_astar_multi_map_suite",
+  "protocol": {
+    "map_size_metres": 6.0,
+    "resolution": 0.2,
+    "robot_radius": 0.1,
+    "minimum_turning_radius": 0.55,
+    "primitive_length": 0.3,
+    "heading_bins": 24,
+    "max_expansions": 50000,
+    "families": [
+      "pillars"
+    ],
+    "targets": [
+      4
+    ],
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "candidates_per_target": 3,
+    "calibration_trials": 220,
+    "risk_epsilon": 0.15,
+    "confidence": 0.95
+  },
+  "attempted_instances": 3,
+  "valid_instances": 3,
+  "failures": [],
+  "overall": {
+    "instances": 3,
+    "mean_query_reduction": 0.4083333333333334,
+    "median_query_reduction": 0.43333333333333335,
+    "minimum_query_reduction": 0.30833333333333335,
+    "maximum_query_reduction": 0.4833333333333333,
+    "positive_reduction_fraction": 1.0,
+    "mean_screened_query_reduction": 0.5027777777777778,
+    "mean_screening_additional_query_reduction": 0.15948233160345363,
+    "screening_query_gain_fraction": 1.0,
+    "mean_runtime_ratio_screened_vs_lazy": 0.7884739005519622,
+    "screening_faster_fraction": 1.0,
+    "max_objective_difference": 1.7763568394002505e-15,
+    "one_shot_feasible_fraction": 0.6666666666666666,
+    "mean_one_shot_loss": 0.04681343975100083,
+    "maximum_one_shot_loss": 0.09362687950200166
+  },
+  "by_family": {
+    "pillars": {
+      "instances": 3,
+      "mean_query_reduction": 0.4083333333333334,
+      "median_query_reduction": 0.43333333333333335,
+      "minimum_query_reduction": 0.30833333333333335,
+      "maximum_query_reduction": 0.4833333333333333,
+      "positive_reduction_fraction": 1.0,
+      "mean_screened_query_reduction": 0.5027777777777778,
+      "mean_screening_additional_query_reduction": 0.15948233160345363,
+      "screening_query_gain_fraction": 1.0,
+      "mean_runtime_ratio_screened_vs_lazy": 0.7884739005519622,
+      "screening_faster_fraction": 1.0,
+      "max_objective_difference": 1.7763568394002505e-15,
+      "one_shot_feasible_fraction": 0.6666666666666666,
+      "mean_one_shot_loss": 0.04681343975100083,
+      "maximum_one_shot_loss": 0.09362687950200166
+    }
+  },
+  "by_targets": {
+    "4": {
+      "instances": 3,
+      "mean_query_reduction": 0.4083333333333334,
+      "median_query_reduction": 0.43333333333333335,
+      "minimum_query_reduction": 0.30833333333333335,
+      "maximum_query_reduction": 0.4833333333333333,
+      "positive_reduction_fraction": 1.0,
+      "mean_screened_query_reduction": 0.5027777777777778,
+      "mean_screening_additional_query_reduction": 0.15948233160345363,
+      "screening_query_gain_fraction": 1.0,
+      "mean_runtime_ratio_screened_vs_lazy": 0.7884739005519622,
+      "screening_faster_fraction": 1.0,
+      "max_objective_difference": 1.7763568394002505e-15,
+      "one_shot_feasible_fraction": 0.6666666666666666,
+      "mean_one_shot_loss": 0.04681343975100083,
+      "maximum_one_shot_loss": 0.09362687950200166
+    }
+  },
+  "wall_clock_seconds": 165.04125900000508,
+  "instances": [
+    {
+      "family": "pillars",
+      "seed": 0,
+      "targets": 4,
+      "candidates_per_target": 3,
+      "target_means": [
+        [
+          2.4,
+          1.6
+        ],
+        [
+          3.2,
+          4.8
+        ],
+        [
+          4.0,
+          1.2
+        ],
+        [
+          5.6,
+          2.0
+        ]
+      ],
+      "total_directed_edges": 120,
+      "full": {
+        "objective": 14.398188672471026,
+        "feasible": true,
+        "lower_bound": 14.398188672471026,
+        "upper_bound": 14.398188672471026,
+        "relative_gap": 0.0,
+        "exact_edge_evaluations": 120,
+        "total_possible_edges": 120,
+        "safely_pruned_edges": 0,
+        "runtime_seconds": 24.547253500000807,
+        "group_order": [
+          "T1",
+          "T3",
+          "T4",
+          "T2"
+        ],
+        "poses": [
+          "T1:r1:a2",
+          "T3:r1:a1",
+          "T4:r1:a7",
+          "T2:r1:a4"
+        ]
+      },
+      "one_shot": {
+        "objective": 14.398188672471026,
+        "feasible": true,
+        "lower_bound": 8.037270597847725,
+        "upper_bound": 14.398188672471026,
+        "relative_gap": 0.4417859926217814,
+        "exact_edge_evaluations": 4,
+        "total_possible_edges": 120,
+        "safely_pruned_edges": 0,
+        "runtime_seconds": 0.1593818000110332,
+        "group_order": [
+          "T1",
+          "T3",
+          "T4",
+          "T2"
+        ],
+        "poses": [
+          "T1:r1:a2",
+          "T3:r1:a1",
+          "T4:r1:a7",
+          "T2:r1:a4"
+        ]
+      },
+      "lazy": {
+        "objective": 14.398188672471026,
+        "feasible": true,
+        "lower_bound": 14.398188672471026,
+        "upper_bound": 14.398188672471026,
+        "relative_gap": 0.0,
+        "exact_edge_evaluations": 68,
+        "total_possible_edges": 120,
+        "safely_pruned_edges": 0,
+        "runtime_seconds": 12.740731900004903,
+        "group_order": [
+          "T1",
+          "T3",
+          "T4",
+          "T2"
+        ],
+        "poses": [
+          "T1:r1:a2",
+          "T3:r1:a1",
+          "T4:r1:a7",
+          "T2:r1:a4"
+        ]
+      },
+      "screened": {
+        "objective": 14.398188672471026,
+        "feasible": true,
+        "lower_bound": 14.398188672471026,
+        "upper_bound": 14.398188672471026,
+        "relative_gap": 0.0,
+        "exact_edge_evaluations": 59,
+        "total_possible_edges": 120,
+        "safely_pruned_edges": 61,
+        "runtime_seconds": 12.574237799999537,
+        "group_order": [
+          "T1",
+          "T3",
+          "T4",
+          "T2"
+        ],
+        "poses": [
+          "T1:r1:a2",
+          "T3:r1:a1",
+          "T4:r1:a7",
+          "T2:r1:a4"
+        ]
+      },
+      "query_reduction": 0.43333333333333335,
+      "screened_query_reduction_vs_full": 0.5083333333333333,
+      "screening_additional_query_reduction": 0.13235294117647056,
+      "runtime_ratio_screened_vs_lazy": 0.9869321400597636,
+      "runtime_ratio_lazy_vs_full": 0.5190288151790377,
+      "one_shot_objective_loss": 0.0,
+      "one_shot_feasible": true,
+      "screened_faster_than_lazy": true
+    },
+    {
+      "family": "pillars",
+      "seed": 1,
+      "targets": 4,
+      "candidates_per_target": 3,
+      "target_means": [
+        [
+          3.6,
+          3.2
+        ],
+        [
+          0.4,
+          5.6
+        ],
+        [
+          5.6,
+          2.8
+        ],
+        [
+          3.6,
+          0.4
+        ]
+      ],
+      "total_directed_edges": 120,
+      "full": {
+        "objective": 15.500282900301343,
+        "feasible": true,
+        "lower_bound": 15.500282900301343,
+        "upper_bound": 15.500282900301343,
+        "relative_gap": 0.0,
+        "exact_edge_evaluations": 120,
+        "total_possible_edges": 120,
+        "safely_pruned_edges": 0,
+        "runtime_seconds": 27.519495999993524,
+        "group_order": [
+          "T4",
+          "T3",
+          "T1",
+          "T2"
+        ],
+        "poses": [
+          "T4:r1:a6",
+          "T3:r1:a0",
+          "T1:r1:a3",
+          "T2:r1:a3"
+        ]
+      },
+      "one_shot": {
+        "objective": 16.951526019654793,
+        "feasible": true,
+        "lower_bound": 9.844994333720617,
+        "upper_bound": 16.951526019654793,
+        "relative_gap": 0.4192266629974412,
+        "exact_edge_evaluations": 4,
+        "total_possible_edges": 120,
+        "safely_pruned_edges": 0,
+        "runtime_seconds": 0.23546349999378435,
+        "group_order": [
+          "T4",
+          "T1",
+          "T3",
+          "T2"
+        ],
+        "poses": [
+          "T4:r1:a6",
+          "T1:r1:a3",
+          "T3:r1:a0",
+          "T2:r1:a3"
+        ]
+      },
+      "lazy": {
+        "objective": 15.500282900301343,
+        "feasible": true,
+        "lower_bound": 15.500282900301343,
+        "upper_bound": 15.500282900301343,
+        "relative_gap": 0.0,
+        "exact_edge_evaluations": 83,
+        "total_possible_edges": 120,
+        "safely_pruned_edges": 0,
+        "runtime_seconds": 20.319246099999873,
+        "group_order": [
+          "T4",
+          "T3",
+          "T1",
+          "T2"
+        ],
+        "poses": [
+          "T4:r1:a6",
+          "T3:r1:a0",
+          "T1:r1:a3",
+          "T2:r1:a3"
+        ]
+      },
+      "screened": {
+        "objective": 15.500282900301343,
+        "feasible": true,
+        "lower_bound": 15.500282900301343,
+        "upper_bound": 15.500282900301343,
+        "relative_gap": 0.0,
+        "exact_edge_evaluations": 69,
+        "total_possible_edges": 120,
+        "safely_pruned_edges": 51,
+        "runtime_seconds": 13.766622399998596,
+        "group_order": [
+          "T4",
+          "T3",
+          "T1",
+          "T2"
+        ],
+        "poses": [
+          "T4:r1:a6",
+          "T3:r1:a0",
+          "T1:r1:a3",
+          "T2:r1:a3"
+        ]
+      },
+      "query_reduction": 0.30833333333333335,
+      "screened_query_reduction_vs_full": 0.42500000000000004,
+      "screening_additional_query_reduction": 0.1686746987951807,
+      "runtime_ratio_screened_vs_lazy": 0.6775163966343556,
+      "runtime_ratio_lazy_vs_full": 0.7383582206594429,
+      "one_shot_objective_loss": 0.09362687950200166,
+      "one_shot_feasible": true,
+      "screened_faster_than_lazy": true
+    },
+    {
+      "family": "pillars",
+      "seed": 2,
+      "targets": 4,
+      "candidates_per_target": 3,
+      "target_means": [
+        [
+          0.4,
+          4.0
+        ],
+        [
+          2.4,
+          5.6
+        ],
+        [
+          3.2,
+          3.2
+        ],
+        [
+          4.8,
+          0.4
+        ]
+      ],
+      "total_directed_edges": 120,
+      "full": {
+        "objective": 13.081251962476722,
+        "feasible": true,
+        "lower_bound": 13.081251962476722,
+        "upper_bound": 13.081251962476722,
+        "relative_gap": 0.0,
+        "exact_edge_evaluations": 120,
+        "total_possible_edges": 120,
+        "safely_pruned_edges": 0,
+        "runtime_seconds": 26.666376099994523,
+        "group_order": [
+          "T4",
+          "T3",
+          "T2",
+          "T1"
+        ],
+        "poses": [
+          "T4:r1:a0",
+          "T3:r1:a3",
+          "T2:r1:a3",
+          "T1:r1:a5"
+        ]
+      },
+      "one_shot": {
+        "objective": null,
+        "feasible": false,
+        "lower_bound": 9.481404680145593,
+        "upper_bound": null,
+        "relative_gap": null,
+        "exact_edge_evaluations": 4,
+        "total_possible_edges": 120,
+        "safely_pruned_edges": 0,
+        "runtime_seconds": 1.6681926000019303,
+        "group_order": [
+          "T4",
+          "T3",
+          "T2",
+          "T1"
+        ],
+        "poses": [
+          "T4:r1:a7",
+          "T3:r1:a0",
+          "T2:r1:a1",
+          "T1:r1:a5"
+        ]
+      },
+      "lazy": {
+        "objective": 13.08125196247672,
+        "feasible": true,
+        "lower_bound": 13.081251962476722,
+        "upper_bound": 13.08125196247672,
+        "relative_gap": 0.0,
+        "exact_edge_evaluations": 62,
+        "total_possible_edges": 120,
+        "safely_pruned_edges": 0,
+        "runtime_seconds": 14.252403800011962,
+        "group_order": [
+          "T4",
+          "T3",
+          "T2",
+          "T1"
+        ],
+        "poses": [
+          "T4:r1:a0",
+          "T3:r1:a3",
+          "T2:r1:a3",
+          "T1:r1:a5"
+        ]
+      },
+      "screened": {
+        "objective": 13.08125196247672,
+        "feasible": true,
+        "lower_bound": 13.081251962476722,
+        "upper_bound": 13.08125196247672,
+        "relative_gap": 0.0,
+        "exact_edge_evaluations": 51,
+        "total_possible_edges": 120,
+        "safely_pruned_edges": 69,
+        "runtime_seconds": 9.990552600007504,
+        "group_order": [
+          "T4",
+          "T3",
+          "T2",
+          "T1"
+        ],
+        "poses": [
+          "T4:r1:a0",
+          "T3:r1:a3",
+          "T2:r1:a3",
+          "T1:r1:a5"
+        ]
+      },
+      "query_reduction": 0.4833333333333333,
+      "screened_query_reduction_vs_full": 0.575,
+      "screening_additional_query_reduction": 0.17741935483870963,
+      "runtime_ratio_screened_vs_lazy": 0.7009731649617673,
+      "runtime_ratio_lazy_vs_full": 0.5344709662298242,
+      "one_shot_objective_loss": null,
+      "one_shot_feasible": false,
+      "screened_faster_than_lazy": true
+    }
+  ]
+}

@@ -1,0 +1,658 @@
+{
+  "status": "post_protocol_exploratory_safe_screening",
+  "method": "directed grouped forced-edge conditional lower-bound screening",
+  "configuration": {
+    "oracle": "proxy",
+    "targets": [
+      4,
+      5
+    ],
+    "candidates": [
+      2,
+      3
+    ],
+    "densities": [
+      "low",
+      "medium",
+      "high"
+    ],
+    "seeds": 2
+  },
+  "instances": 24,
+  "aggregate": {
+    "mean_query_reduction_vs_full": 0.5943096255596255,
+    "minimum_query_reduction_vs_full": 0.3035714285714286,
+    "mean_query_reduction_vs_route_only": 0.008146199395487408,
+    "minimum_query_reduction_vs_route_only": -0.23076923076923084,
+    "instances_fewer_queries_than_route_only": 11,
+    "mean_safely_pruned_edges": 70.04166666666667,
+    "mean_runtime_ratio_to_route_only": 6.617258231378087
+  },
+  "records": [
+    {
+      "oracle": "proxy",
+      "targets": 4,
+      "candidates": 2,
+      "density": "low",
+      "seed": 0,
+      "full": {
+        "queries": 56,
+        "runtime_seconds": 0.000280100000964012,
+        "expanded_states": 0
+      },
+      "route_only": {
+        "queries": 22,
+        "runtime_seconds": 0.0034640000012586825,
+        "expanded_states": 0,
+        "query_reduction_vs_full": 0.6071428571428572
+      },
+      "screened": {
+        "queries": 21,
+        "safely_pruned_edges": 35,
+        "runtime_seconds": 0.018045400000119116,
+        "expanded_states": 0,
+        "query_reduction_vs_full": 0.625,
+        "query_reduction_vs_route_only": 0.045454545454545414
+      }
+    },
+    {
+      "oracle": "proxy",
+      "targets": 4,
+      "candidates": 2,
+      "density": "low",
+      "seed": 1,
+      "full": {
+        "queries": 56,
+        "runtime_seconds": 0.00023979999969014898,
+        "expanded_states": 0
+      },
+      "route_only": {
+        "queries": 20,
+        "runtime_seconds": 0.0032084000049508177,
+        "expanded_states": 0,
+        "query_reduction_vs_full": 0.6428571428571428
+      },
+      "screened": {
+        "queries": 16,
+        "safely_pruned_edges": 40,
+        "runtime_seconds": 0.010734800001955591,
+        "expanded_states": 0,
+        "query_reduction_vs_full": 0.7142857142857143,
+        "query_reduction_vs_route_only": 0.19999999999999996
+      }
+    },
+    {
+      "oracle": "proxy",
+      "targets": 4,
+      "candidates": 2,
+      "density": "medium",
+      "seed": 0,
+      "full": {
+        "queries": 56,
+        "runtime_seconds": 0.0002927000023191795,
+        "expanded_states": 0
+      },
+      "route_only": {
+        "queries": 39,
+        "runtime_seconds": 0.007265700005518738,
+        "expanded_states": 0,
+        "query_reduction_vs_full": 0.3035714285714286
+      },
+      "screened": {
+        "queries": 39,
+        "safely_pruned_edges": 17,
+        "runtime_seconds": 0.050802800004021265,
+        "expanded_states": 0,
+        "query_reduction_vs_full": 0.3035714285714286,
+        "query_reduction_vs_route_only": 0.0
+      }
+    },
+    {
+      "oracle": "proxy",
+      "targets": 4,
+      "candidates": 2,
+      "density": "medium",
+      "seed": 1,
+      "full": {
+        "queries": 56,
+        "runtime_seconds": 0.00029319999885046855,
+        "expanded_states": 0
+      },
+      "route_only": {
+        "queries": 20,
+        "runtime_seconds": 0.0032172999999602325,
+        "expanded_states": 0,
+        "query_reduction_vs_full": 0.6428571428571428
+      },
+      "screened": {
+        "queries": 16,
+        "safely_pruned_edges": 40,
+        "runtime_seconds": 0.010905800001637544,
+        "expanded_states": 0,
+        "query_reduction_vs_full": 0.7142857142857143,
+        "query_reduction_vs_route_only": 0.19999999999999996
+      }
+    },
+    {
+      "oracle": "proxy",
+      "targets": 4,
+      "candidates": 2,
+      "density": "high",
+      "seed": 0,
+      "full": {
+        "queries": 56,
+        "runtime_seconds": 0.0003766000008909032,
+        "expanded_states": 0
+      },
+      "route_only": {
+        "queries": 35,
+        "runtime_seconds": 0.005987600001390092,
+        "expanded_states": 0,
+        "query_reduction_vs_full": 0.375
+      },
+      "screened": {
+        "queries": 34,
+        "safely_pruned_edges": 22,
+        "runtime_seconds": 0.043774600002507214,
+        "expanded_states": 0,
+        "query_reduction_vs_full": 0.3928571428571429,
+        "query_reduction_vs_route_only": 0.02857142857142858
+      }
+    },
+    {
+      "oracle": "proxy",
+      "targets": 4,
+      "candidates": 2,
+      "density": "high",
+      "seed": 1,
+      "full": {
+        "queries": 56,
+        "runtime_seconds": 0.00040869999793358147,
+        "expanded_states": 0
+      },
+      "route_only": {
+        "queries": 29,
+        "runtime_seconds": 0.005336099995474797,
+        "expanded_states": 0,
+        "query_reduction_vs_full": 0.4821428571428571
+      },
+      "screened": {
+        "queries": 30,
+        "safely_pruned_edges": 26,
+        "runtime_seconds": 0.04386330000124872,
+        "expanded_states": 0,
+        "query_reduction_vs_full": 0.4642857142857143,
+        "query_reduction_vs_route_only": -0.034482758620689724
+      }
+    },
+    {
+      "oracle": "proxy",
+      "targets": 4,
+      "candidates": 3,
+      "density": "low",
+      "seed": 0,
+      "full": {
+        "queries": 120,
+        "runtime_seconds": 0.0004791000028490089,
+        "expanded_states": 0
+      },
+      "route_only": {
+        "queries": 39,
+        "runtime_seconds": 0.012502199999289587,
+        "expanded_states": 0,
+        "query_reduction_vs_full": 0.675
+      },
+      "screened": {
+        "queries": 43,
+        "safely_pruned_edges": 77,
+        "runtime_seconds": 0.0818174000014551,
+        "expanded_states": 0,
+        "query_reduction_vs_full": 0.6416666666666666,
+        "query_reduction_vs_route_only": -0.10256410256410264
+      }
+    },
+    {
+      "oracle": "proxy",
+      "targets": 4,
+      "candidates": 3,
+      "density": "low",
+      "seed": 1,
+      "full": {
+        "queries": 120,
+        "runtime_seconds": 0.00048409999726573005,
+        "expanded_states": 0
+      },
+      "route_only": {
+        "queries": 32,
+        "runtime_seconds": 0.01103250000596745,
+        "expanded_states": 0,
+        "query_reduction_vs_full": 0.7333333333333334
+      },
+      "screened": {
+        "queries": 27,
+        "safely_pruned_edges": 93,
+        "runtime_seconds": 0.04608120000193594,
+        "expanded_states": 0,
+        "query_reduction_vs_full": 0.775,
+        "query_reduction_vs_route_only": 0.15625
+      }
+    },
+    {
+      "oracle": "proxy",
+      "targets": 4,
+      "candidates": 3,
+      "density": "medium",
+      "seed": 0,
+      "full": {
+        "queries": 120,
+        "runtime_seconds": 0.0010210999971604906,
+        "expanded_states": 0
+      },
+      "route_only": {
+        "queries": 49,
+        "runtime_seconds": 0.02643529999477323,
+        "expanded_states": 0,
+        "query_reduction_vs_full": 0.5916666666666667
+      },
+      "screened": {
+        "queries": 37,
+        "safely_pruned_edges": 83,
+        "runtime_seconds": 0.15852019999874756,
+        "expanded_states": 0,
+        "query_reduction_vs_full": 0.6916666666666667,
+        "query_reduction_vs_route_only": 0.24489795918367352
+      }
+    },
+    {
+      "oracle": "proxy",
+      "targets": 4,
+      "candidates": 3,
+      "density": "medium",
+      "seed": 1,
+      "full": {
+        "queries": 120,
+        "runtime_seconds": 0.0009405000018887222,
+        "expanded_states": 0
+      },
+      "route_only": {
+        "queries": 32,
+        "runtime_seconds": 0.016679100001056213,
+        "expanded_states": 0,
+        "query_reduction_vs_full": 0.7333333333333334
+      },
+      "screened": {
+        "queries": 27,
+        "safely_pruned_edges": 93,
+        "runtime_seconds": 0.06574739999632584,
+        "expanded_states": 0,
+        "query_reduction_vs_full": 0.775,
+        "query_reduction_vs_route_only": 0.15625
+      }
+    },
+    {
+      "oracle": "proxy",
+      "targets": 4,
+      "candidates": 3,
+      "density": "high",
+      "seed": 0,
+      "full": {
+        "queries": 120,
+        "runtime_seconds": 0.0012047999989590608,
+        "expanded_states": 0
+      },
+      "route_only": {
+        "queries": 75,
+        "runtime_seconds": 0.039883900004497264,
+        "expanded_states": 0,
+        "query_reduction_vs_full": 0.375
+      },
+      "screened": {
+        "queries": 81,
+        "safely_pruned_edges": 39,
+        "runtime_seconds": 0.36677570000028936,
+        "expanded_states": 0,
+        "query_reduction_vs_full": 0.32499999999999996,
+        "query_reduction_vs_route_only": -0.08000000000000007
+      }
+    },
+    {
+      "oracle": "proxy",
+      "targets": 4,
+      "candidates": 3,
+      "density": "high",
+      "seed": 1,
+      "full": {
+        "queries": 120,
+        "runtime_seconds": 0.0012080000014975667,
+        "expanded_states": 0
+      },
+      "route_only": {
+        "queries": 52,
+        "runtime_seconds": 0.027113299998745788,
+        "expanded_states": 0,
+        "query_reduction_vs_full": 0.5666666666666667
+      },
+      "screened": {
+        "queries": 51,
+        "safely_pruned_edges": 69,
+        "runtime_seconds": 0.18555559999367688,
+        "expanded_states": 0,
+        "query_reduction_vs_full": 0.575,
+        "query_reduction_vs_route_only": 0.019230769230769273
+      }
+    },
+    {
+      "oracle": "proxy",
+      "targets": 5,
+      "candidates": 2,
+      "density": "low",
+      "seed": 0,
+      "full": {
+        "queries": 90,
+        "runtime_seconds": 0.0009329000022262335,
+        "expanded_states": 0
+      },
+      "route_only": {
+        "queries": 39,
+        "runtime_seconds": 0.030602500002714805,
+        "expanded_states": 0,
+        "query_reduction_vs_full": 0.5666666666666667
+      },
+      "screened": {
+        "queries": 48,
+        "safely_pruned_edges": 42,
+        "runtime_seconds": 0.296524599994882,
+        "expanded_states": 0,
+        "query_reduction_vs_full": 0.4666666666666667,
+        "query_reduction_vs_route_only": -0.23076923076923084
+      }
+    },
+    {
+      "oracle": "proxy",
+      "targets": 5,
+      "candidates": 2,
+      "density": "low",
+      "seed": 1,
+      "full": {
+        "queries": 90,
+        "runtime_seconds": 0.0009316999930888414,
+        "expanded_states": 0
+      },
+      "route_only": {
+        "queries": 25,
+        "runtime_seconds": 0.018285199999809265,
+        "expanded_states": 0,
+        "query_reduction_vs_full": 0.7222222222222222
+      },
+      "screened": {
+        "queries": 29,
+        "safely_pruned_edges": 61,
+        "runtime_seconds": 0.09030889999849023,
+        "expanded_states": 0,
+        "query_reduction_vs_full": 0.6777777777777778,
+        "query_reduction_vs_route_only": -0.15999999999999992
+      }
+    },
+    {
+      "oracle": "proxy",
+      "targets": 5,
+      "candidates": 2,
+      "density": "medium",
+      "seed": 0,
+      "full": {
+        "queries": 90,
+        "runtime_seconds": 0.0010359000007156283,
+        "expanded_states": 0
+      },
+      "route_only": {
+        "queries": 41,
+        "runtime_seconds": 0.03284659999917494,
+        "expanded_states": 0,
+        "query_reduction_vs_full": 0.5444444444444445
+      },
+      "screened": {
+        "queries": 42,
+        "safely_pruned_edges": 48,
+        "runtime_seconds": 0.2814877000055276,
+        "expanded_states": 0,
+        "query_reduction_vs_full": 0.5333333333333333,
+        "query_reduction_vs_route_only": -0.024390243902439046
+      }
+    },
+    {
+      "oracle": "proxy",
+      "targets": 5,
+      "candidates": 2,
+      "density": "medium",
+      "seed": 1,
+      "full": {
+        "queries": 90,
+        "runtime_seconds": 0.0010403999986010604,
+        "expanded_states": 0
+      },
+      "route_only": {
+        "queries": 25,
+        "runtime_seconds": 0.018299600000318605,
+        "expanded_states": 0,
+        "query_reduction_vs_full": 0.7222222222222222
+      },
+      "screened": {
+        "queries": 29,
+        "safely_pruned_edges": 61,
+        "runtime_seconds": 0.0887695999990683,
+        "expanded_states": 0,
+        "query_reduction_vs_full": 0.6777777777777778,
+        "query_reduction_vs_route_only": -0.15999999999999992
+      }
+    },
+    {
+      "oracle": "proxy",
+      "targets": 5,
+      "candidates": 2,
+      "density": "high",
+      "seed": 0,
+      "full": {
+        "queries": 90,
+        "runtime_seconds": 0.0012523000041255727,
+        "expanded_states": 0
+      },
+      "route_only": {
+        "queries": 48,
+        "runtime_seconds": 0.03853009999875212,
+        "expanded_states": 0,
+        "query_reduction_vs_full": 0.4666666666666667
+      },
+      "screened": {
+        "queries": 43,
+        "safely_pruned_edges": 47,
+        "runtime_seconds": 0.28585519999614917,
+        "expanded_states": 0,
+        "query_reduction_vs_full": 0.5222222222222221,
+        "query_reduction_vs_route_only": 0.10416666666666663
+      }
+    },
+    {
+      "oracle": "proxy",
+      "targets": 5,
+      "candidates": 2,
+      "density": "high",
+      "seed": 1,
+      "full": {
+        "queries": 90,
+        "runtime_seconds": 0.0012226000035298057,
+        "expanded_states": 0
+      },
+      "route_only": {
+        "queries": 32,
+        "runtime_seconds": 0.024533199997677002,
+        "expanded_states": 0,
+        "query_reduction_vs_full": 0.6444444444444444
+      },
+      "screened": {
+        "queries": 32,
+        "safely_pruned_edges": 58,
+        "runtime_seconds": 0.15416559999721358,
+        "expanded_states": 0,
+        "query_reduction_vs_full": 0.6444444444444444,
+        "query_reduction_vs_route_only": 0.0
+      }
+    },
+    {
+      "oracle": "proxy",
+      "targets": 5,
+      "candidates": 3,
+      "density": "low",
+      "seed": 0,
+      "full": {
+        "queries": 195,
+        "runtime_seconds": 0.002015800004301127,
+        "expanded_states": 0
+      },
+      "route_only": {
+        "queries": 79,
+        "runtime_seconds": 0.12748879999708151,
+        "expanded_states": 0,
+        "query_reduction_vs_full": 0.5948717948717949
+      },
+      "screened": {
+        "queries": 84,
+        "safely_pruned_edges": 111,
+        "runtime_seconds": 1.1929137999977684,
+        "expanded_states": 0,
+        "query_reduction_vs_full": 0.5692307692307692,
+        "query_reduction_vs_route_only": -0.06329113924050622
+      }
+    },
+    {
+      "oracle": "proxy",
+      "targets": 5,
+      "candidates": 3,
+      "density": "low",
+      "seed": 1,
+      "full": {
+        "queries": 195,
+        "runtime_seconds": 0.0019438000017544255,
+        "expanded_states": 0
+      },
+      "route_only": {
+        "queries": 52,
+        "runtime_seconds": 0.08185450000019046,
+        "expanded_states": 0,
+        "query_reduction_vs_full": 0.7333333333333334
+      },
+      "screened": {
+        "queries": 52,
+        "safely_pruned_edges": 143,
+        "runtime_seconds": 0.4163795000058599,
+        "expanded_states": 0,
+        "query_reduction_vs_full": 0.7333333333333334,
+        "query_reduction_vs_route_only": 0.0
+      }
+    },
+    {
+      "oracle": "proxy",
+      "targets": 5,
+      "candidates": 3,
+      "density": "medium",
+      "seed": 0,
+      "full": {
+        "queries": 195,
+        "runtime_seconds": 0.0020975000006728806,
+        "expanded_states": 0
+      },
+      "route_only": {
+        "queries": 81,
+        "runtime_seconds": 0.13109139999869512,
+        "expanded_states": 0,
+        "query_reduction_vs_full": 0.5846153846153845
+      },
+      "screened": {
+        "queries": 80,
+        "safely_pruned_edges": 115,
+        "runtime_seconds": 1.0713101000001188,
+        "expanded_states": 0,
+        "query_reduction_vs_full": 0.5897435897435898,
+        "query_reduction_vs_route_only": 0.012345679012345734
+      }
+    },
+    {
+      "oracle": "proxy",
+      "targets": 5,
+      "candidates": 3,
+      "density": "medium",
+      "seed": 1,
+      "full": {
+        "queries": 195,
+        "runtime_seconds": 0.0012775000068359077,
+        "expanded_states": 0
+      },
+      "route_only": {
+        "queries": 52,
+        "runtime_seconds": 0.052378599997609854,
+        "expanded_states": 0,
+        "query_reduction_vs_full": 0.7333333333333334
+      },
+      "screened": {
+        "queries": 52,
+        "safely_pruned_edges": 143,
+        "runtime_seconds": 0.256748299994797,
+        "expanded_states": 0,
+        "query_reduction_vs_full": 0.7333333333333334,
+        "query_reduction_vs_route_only": 0.0
+      }
+    },
+    {
+      "oracle": "proxy",
+      "targets": 5,
+      "candidates": 3,
+      "density": "high",
+      "seed": 0,
+      "full": {
+        "queries": 195,
+        "runtime_seconds": 0.0015667000043322332,
+        "expanded_states": 0
+      },
+      "route_only": {
+        "queries": 115,
+        "runtime_seconds": 0.12174390000291169,
+        "expanded_states": 0,
+        "query_reduction_vs_full": 0.41025641025641024
+      },
+      "screened": {
+        "queries": 111,
+        "safely_pruned_edges": 84,
+        "runtime_seconds": 1.3368699999991804,
+        "expanded_states": 0,
+        "query_reduction_vs_full": 0.4307692307692308,
+        "query_reduction_vs_route_only": 0.034782608695652195
+      }
+    },
+    {
+      "oracle": "proxy",
+      "targets": 5,
+      "candidates": 3,
+      "density": "high",
+      "seed": 1,
+      "full": {
+        "queries": 195,
+        "runtime_seconds": 0.0026815000019269064,
+        "expanded_states": 0
+      },
+      "route_only": {
+        "queries": 53,
+        "runtime_seconds": 0.0777447000000393,
+        "expanded_states": 0,
+        "query_reduction_vs_full": 0.7282051282051283
+      },
+      "screened": {
+        "queries": 61,
+        "safely_pruned_edges": 134,
+        "runtime_seconds": 0.5749843000012334,
+        "expanded_states": 0,
+        "query_reduction_vs_full": 0.6871794871794872,
+        "query_reduction_vs_route_only": -0.15094339622641506
+      }
+    }
+  ],
+  "caution": "This screening study was added after the frozen scaling protocol and is exploratory. It must be replicated on a preregistered larger suite before inferential claims."
+}

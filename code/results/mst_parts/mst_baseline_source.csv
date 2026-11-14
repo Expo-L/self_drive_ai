@@ -1,0 +1,7 @@
+family,targets,seed,total_edges,queries,pruned,expanded_states,runtime
+rooms,4,0,120,80,40,493219,30.045
+rooms,4,1,120,59,59,363929,20.458
+rooms,4,2,120,77,43,470374,26.499
+rooms,5,0,195,118,77,716760,41.172
+rooms,5,1,195,129,60,837095,45.990
+rooms,5,2,195,117,69,924010,49.183

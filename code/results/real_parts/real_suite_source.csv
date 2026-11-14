@@ -1,0 +1,3 @@
+map,cells,scale_m,targets,seed,edges,query_reduction,expansion_reduction,screening_gain,screened_expansion_reduction,runtime_ratio,one_shot_loss
+Paris_1_256,40,8.00,5,0,195,0.512821,0.483585,0.221053,0.619875,0.725373,
+Paris_1_256,40,8.00,5,1,195,0.476923,0.526636,0.343137,0.642836,0.777795,

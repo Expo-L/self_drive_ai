@@ -1,0 +1,140 @@
+{
+  "status": "controlled_suite_timing",
+  "summary": {
+    "instances": 3,
+    "repeats": 2,
+    "mean_median_lazy": 23.180371616685687,
+    "mean_median_screened": 20.255619083337177,
+    "mean_median_mst": 24.369164983344188,
+    "mean_ratio_screened_vs_lazy": 0.8107606622497858,
+    "mean_ratio_mst_vs_lazy": 1.0445212154179153
+  },
+  "instances": [
+    {
+      "family": "aisles",
+      "targets": 5,
+      "seed": 0,
+      "repeats": [
+        {
+          "lazy": {
+            "runtime_seconds": 40.079978900030255,
+            "queries": 143
+          },
+          "screened": {
+            "runtime_seconds": 37.49194290000014,
+            "queries": 136
+          },
+          "mst": {
+            "runtime_seconds": 41.09382559999358,
+            "queries": 143
+          }
+        },
+        {
+          "lazy": {
+            "runtime_seconds": 37.55404770001769,
+            "queries": 143
+          },
+          "screened": {
+            "runtime_seconds": 37.59105190000264,
+            "queries": 136
+          },
+          "mst": {
+            "runtime_seconds": 41.79896879999433,
+            "queries": 143
+          }
+        }
+      ],
+      "median_runtime_seconds": {
+        "lazy": 38.81701330002397,
+        "screened": 37.54149740000139,
+        "mst": 41.44639719999395
+      },
+      "median_ratio_screened_vs_lazy": 0.9671402874259315,
+      "median_ratio_mst_vs_lazy": 1.067737924081046
+    },
+    {
+      "family": "rooms",
+      "targets": 4,
+      "seed": 1,
+      "repeats": [
+        {
+          "lazy": {
+            "runtime_seconds": 18.0762019000249,
+            "queries": 59
+          },
+          "screened": {
+            "runtime_seconds": 15.524269799992908,
+            "queries": 56
+          },
+          "mst": {
+            "runtime_seconds": 18.61862740002107,
+            "queries": 59
+          }
+        },
+        {
+          "lazy": {
+            "runtime_seconds": 18.18336210004054,
+            "queries": 59
+          },
+          "screened": {
+            "runtime_seconds": 15.740176399995107,
+            "queries": 56
+          },
+          "mst": {
+            "runtime_seconds": 18.348158600041643,
+            "queries": 59
+          }
+        }
+      ],
+      "median_runtime_seconds": {
+        "lazy": 18.12978200003272,
+        "screened": 15.632223099994007,
+        "mst": 18.483393000031356
+      },
+      "median_ratio_screened_vs_lazy": 0.8622399927349262,
+      "median_ratio_mst_vs_lazy": 1.0195044264734126
+    },
+    {
+      "family": "pillars",
+      "targets": 5,
+      "seed": 0,
+      "repeats": [
+        {
+          "lazy": {
+            "runtime_seconds": 12.68356199999107,
+            "queries": 77
+          },
+          "screened": {
+            "runtime_seconds": 7.703960100014228,
+            "queries": 59
+          },
+          "mst": {
+            "runtime_seconds": 12.941262700012885,
+            "queries": 77
+          }
+        },
+        {
+          "lazy": {
+            "runtime_seconds": 12.505077100009657,
+            "queries": 77
+          },
+          "screened": {
+            "runtime_seconds": 7.482313400018029,
+            "queries": 59
+          },
+          "mst": {
+            "runtime_seconds": 13.414146800001618,
+            "queries": 77
+          }
+        }
+      ],
+      "median_runtime_seconds": {
+        "lazy": 12.594319550000364,
+        "screened": 7.593136750016129,
+        "mst": 13.177704750007251
+      },
+      "median_ratio_screened_vs_lazy": 0.6029017065885,
+      "median_ratio_mst_vs_lazy": 1.0463212956992878
+    }
+  ]
+}

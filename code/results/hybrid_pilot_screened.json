@@ -1,0 +1,109 @@
+{
+  "status": "continuous_curvature_hybrid_astar_prototype",
+  "model": {
+    "resolution": 0.2,
+    "heading_bins": 24,
+    "minimum_turning_radius": 0.55,
+    "primitive_length": 0.3,
+    "robot_radius": 0.1
+  },
+  "full_matrix": {
+    "objective": 15.781261291975309,
+    "exact_edge_evaluations": 195,
+    "expanded_states": 1023892,
+    "failed_queries": 34,
+    "runtime_seconds": 52.873204099996656,
+    "group_order": [
+      "T1",
+      "T5",
+      "T4",
+      "T3",
+      "T2"
+    ],
+    "poses": [
+      "T1:r1:a2",
+      "T5:r1:a2",
+      "T4:r1:a0",
+      "T3:r1:a2",
+      "T2:r1:a4"
+    ]
+  },
+  "one_shot_lower": {
+    "objective": 24.541892731061917,
+    "lower_bound": 10.476554292703037,
+    "upper_bound": 24.541892731061917,
+    "relative_gap": 0.5731154720824289,
+    "exact_edge_evaluations": 5,
+    "expanded_states": 9382,
+    "failed_queries": 0,
+    "runtime_seconds": 0.25906489999761106,
+    "group_order": [
+      "T1",
+      "T2",
+      "T3",
+      "T4",
+      "T5"
+    ],
+    "poses": [
+      "T1:r1:a1",
+      "T2:r1:a0",
+      "T3:r1:a2",
+      "T4:r1:a0",
+      "T5:r1:a5"
+    ]
+  },
+  "bounded_lazy": {
+    "objective": 15.781261291975307,
+    "lower_bound": 15.781261291975309,
+    "upper_bound": 15.781261291975307,
+    "relative_gap": 0.0,
+    "exact_edge_evaluations": 61,
+    "expanded_states": 327322,
+    "failed_queries": 12,
+    "runtime_seconds": 13.753896299996995,
+    "group_order": [
+      "T1",
+      "T5",
+      "T4",
+      "T3",
+      "T2"
+    ],
+    "poses": [
+      "T1:r1:a2",
+      "T5:r1:a2",
+      "T4:r1:a0",
+      "T3:r1:a2",
+      "T2:r1:a4"
+    ]
+  },
+  "screened_bounded_lazy": {
+    "objective": 15.781261291975307,
+    "lower_bound": 15.781261291975309,
+    "upper_bound": 15.781261291975307,
+    "relative_gap": 0.0,
+    "exact_edge_evaluations": 48,
+    "safely_pruned_edges": 147,
+    "expanded_states": 219775,
+    "failed_queries": 8,
+    "runtime_seconds": 11.452293599999393,
+    "group_order": [
+      "T1",
+      "T5",
+      "T4",
+      "T3",
+      "T2"
+    ],
+    "poses": [
+      "T1:r1:a2",
+      "T5:r1:a2",
+      "T4:r1:a0",
+      "T3:r1:a2",
+      "T2:r1:a4"
+    ]
+  },
+  "query_reduction": 0.6871794871794872,
+  "state_expansion_reduction": 0.6803158926918074,
+  "screened_query_reduction_vs_full": 0.7538461538461538,
+  "screened_query_reduction_vs_route_only": 0.21311475409836067,
+  "screened_state_expansion_reduction_vs_full": 0.7853533380473722
+}

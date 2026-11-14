@@ -1,0 +1,499 @@
+{
+  "status": "hybrid_astar_multi_map_suite",
+  "protocol": {
+    "map_size_metres": 6.0,
+    "resolution": 0.2,
+    "robot_radius": 0.1,
+    "minimum_turning_radius": 0.55,
+    "primitive_length": 0.3,
+    "heading_bins": 24,
+    "max_expansions": 50000,
+    "families": [
+      "rooms"
+    ],
+    "targets": [
+      5
+    ],
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "candidates_per_target": 3,
+    "calibration_trials": 220,
+    "risk_epsilon": 0.15,
+    "confidence": 0.95
+  },
+  "attempted_instances": 3,
+  "valid_instances": 3,
+  "failures": [],
+  "overall": {
+    "instances": 3,
+    "mean_query_reduction": 0.37606837606837606,
+    "median_query_reduction": 0.3948717948717949,
+    "minimum_query_reduction": 0.33333333333333337,
+    "maximum_query_reduction": 0.4,
+    "positive_reduction_fraction": 1.0,
+    "mean_screened_query_reduction": 0.4632478632478632,
+    "mean_screening_additional_query_reduction": 0.13591675117098845,
+    "screening_query_gain_fraction": 1.0,
+    "mean_runtime_ratio_screened_vs_lazy": 0.8862511166938907,
+    "screening_faster_fraction": 0.6666666666666666,
+    "max_objective_difference": 3.552713678800501e-15,
+    "one_shot_feasible_fraction": 0.3333333333333333,
+    "mean_one_shot_loss": 0.4143925946374114,
+    "maximum_one_shot_loss": 0.4143925946374114
+  },
+  "by_family": {
+    "rooms": {
+      "instances": 3,
+      "mean_query_reduction": 0.37606837606837606,
+      "median_query_reduction": 0.3948717948717949,
+      "minimum_query_reduction": 0.33333333333333337,
+      "maximum_query_reduction": 0.4,
+      "positive_reduction_fraction": 1.0,
+      "mean_screened_query_reduction": 0.4632478632478632,
+      "mean_screening_additional_query_reduction": 0.13591675117098845,
+      "screening_query_gain_fraction": 1.0,
+      "mean_runtime_ratio_screened_vs_lazy": 0.8862511166938907,
+      "screening_faster_fraction": 0.6666666666666666,
+      "max_objective_difference": 3.552713678800501e-15,
+      "one_shot_feasible_fraction": 0.3333333333333333,
+      "mean_one_shot_loss": 0.4143925946374114,
+      "maximum_one_shot_loss": 0.4143925946374114
+    }
+  },
+  "by_targets": {
+    "5": {
+      "instances": 3,
+      "mean_query_reduction": 0.37606837606837606,
+      "median_query_reduction": 0.3948717948717949,
+      "minimum_query_reduction": 0.33333333333333337,
+      "maximum_query_reduction": 0.4,
+      "positive_reduction_fraction": 1.0,
+      "mean_screened_query_reduction": 0.4632478632478632,
+      "mean_screening_additional_query_reduction": 0.13591675117098845,
+      "screening_query_gain_fraction": 1.0,
+      "mean_runtime_ratio_screened_vs_lazy": 0.8862511166938907,
+      "screening_faster_fraction": 0.6666666666666666,
+      "max_objective_difference": 3.552713678800501e-15,
+      "one_shot_feasible_fraction": 0.3333333333333333,
+      "mean_one_shot_loss": 0.4143925946374114,
+      "maximum_one_shot_loss": 0.4143925946374114
+    }
+  },
+  "wall_clock_seconds": 532.3608967000037,
+  "instances": [
+    {
+      "family": "rooms",
+      "seed": 0,
+      "targets": 5,
+      "candidates_per_target": 3,
+      "target_means": [
+        [
+          3.2,
+          0.4
+        ],
+        [
+          3.2,
+          5.6
+        ],
+        [
+          5.6,
+          4.0
+        ],
+        [
+          1.6,
+          3.6
+        ],
+        [
+          0.8,
+          5.2
+        ]
+      ],
+      "total_directed_edges": 195,
+      "full": {
+        "objective": 18.179122650680664,
+        "feasible": true,
+        "lower_bound": 18.179122650680664,
+        "upper_bound": 18.179122650680664,
+        "relative_gap": 0.0,
+        "exact_edge_evaluations": 195,
+        "total_possible_edges": 195,
+        "safely_pruned_edges": 0,
+        "runtime_seconds": 69.72961589999613,
+        "group_order": [
+          "T1",
+          "T3",
+          "T5",
+          "T2",
+          "T4"
+        ],
+        "poses": [
+          "T1:r1:a0",
+          "T3:r1:a2",
+          "T5:r1:a4",
+          "T2:r1:a2",
+          "T4:r1:a4"
+        ]
+      },
+      "one_shot": {
+        "objective": 25.71241645412796,
+        "feasible": true,
+        "lower_bound": 10.124353243324602,
+        "upper_bound": 25.71241645412796,
+        "relative_gap": 0.6062465283499558,
+        "exact_edge_evaluations": 5,
+        "total_possible_edges": 195,
+        "safely_pruned_edges": 0,
+        "runtime_seconds": 0.8532491000078153,
+        "group_order": [
+          "T1",
+          "T4",
+          "T5",
+          "T2",
+          "T3"
+        ],
+        "poses": [
+          "T1:r1:a7",
+          "T4:r1:a5",
+          "T5:r1:a4",
+          "T2:r1:a1",
+          "T3:r1:a7"
+        ]
+      },
+      "lazy": {
+        "objective": 18.17912265068066,
+        "feasible": true,
+        "lower_bound": 18.179122650680664,
+        "upper_bound": 18.17912265068066,
+        "relative_gap": 0.0,
+        "exact_edge_evaluations": 118,
+        "total_possible_edges": 195,
+        "safely_pruned_edges": 0,
+        "runtime_seconds": 43.998403600009624,
+        "group_order": [
+          "T1",
+          "T3",
+          "T5",
+          "T2",
+          "T4"
+        ],
+        "poses": [
+          "T1:r1:a0",
+          "T3:r1:a2",
+          "T5:r1:a4",
+          "T2:r1:a2",
+          "T4:r1:a4"
+        ]
+      },
+      "screened": {
+        "objective": 18.17912265068066,
+        "feasible": true,
+        "lower_bound": 18.179122650680664,
+        "upper_bound": 18.17912265068066,
+        "relative_gap": 0.0,
+        "exact_edge_evaluations": 107,
+        "total_possible_edges": 195,
+        "safely_pruned_edges": 88,
+        "runtime_seconds": 47.98361389999627,
+        "group_order": [
+          "T1",
+          "T3",
+          "T5",
+          "T2",
+          "T4"
+        ],
+        "poses": [
+          "T1:r1:a0",
+          "T3:r1:a2",
+          "T5:r1:a4",
+          "T2:r1:a2",
+          "T4:r1:a4"
+        ]
+      },
+      "query_reduction": 0.3948717948717949,
+      "screened_query_reduction_vs_full": 0.45128205128205123,
+      "screening_additional_query_reduction": 0.09322033898305082,
+      "runtime_ratio_screened_vs_lazy": 1.0905762476342613,
+      "runtime_ratio_lazy_vs_full": 0.6309858878774071,
+      "one_shot_objective_loss": 0.4143925946374114,
+      "one_shot_feasible": true,
+      "screened_faster_than_lazy": false
+    },
+    {
+      "family": "rooms",
+      "seed": 1,
+      "targets": 5,
+      "candidates_per_target": 3,
+      "target_means": [
+        [
+          4.8,
+          1.6
+        ],
+        [
+          5.6,
+          4.0
+        ],
+        [
+          1.6,
+          1.2
+        ],
+        [
+          1.2,
+          4.0
+        ],
+        [
+          3.2,
+          3.6
+        ]
+      ],
+      "total_directed_edges": 195,
+      "full": {
+        "objective": 16.446280129224444,
+        "feasible": true,
+        "lower_bound": 16.446280129224444,
+        "upper_bound": 16.446280129224444,
+        "relative_gap": 0.0,
+        "exact_edge_evaluations": 195,
+        "total_possible_edges": 195,
+        "safely_pruned_edges": 0,
+        "runtime_seconds": 108.67702200000349,
+        "group_order": [
+          "T3",
+          "T1",
+          "T2",
+          "T5",
+          "T4"
+        ],
+        "poses": [
+          "T3:r0:a2",
+          "T1:r1:a1",
+          "T2:r1:a1",
+          "T5:r1:a6",
+          "T4:r1:a4"
+        ]
+      },
+      "one_shot": {
+        "objective": null,
+        "feasible": false,
+        "lower_bound": 8.449512093388378,
+        "upper_bound": null,
+        "relative_gap": null,
+        "exact_edge_evaluations": 5,
+        "total_possible_edges": 195,
+        "safely_pruned_edges": 0,
+        "runtime_seconds": 1.3780699000053573,
+        "group_order": [
+          "T3",
+          "T4",
+          "T5",
+          "T2",
+          "T1"
+        ],
+        "poses": [
+          "T3:r1:a7",
+          "T4:r1:a3",
+          "T5:r1:a0",
+          "T2:r1:a1",
+          "T1:r1:a4"
+        ]
+      },
+      "lazy": {
+        "objective": 16.446280129224444,
+        "feasible": true,
+        "lower_bound": 16.446280129224444,
+        "upper_bound": 16.446280129224444,
+        "relative_gap": 0.0,
+        "exact_edge_evaluations": 130,
+        "total_possible_edges": 195,
+        "safely_pruned_edges": 0,
+        "runtime_seconds": 52.44845830000122,
+        "group_order": [
+          "T3",
+          "T1",
+          "T2",
+          "T5",
+          "T4"
+        ],
+        "poses": [
+          "T3:r0:a2",
+          "T1:r1:a1",
+          "T2:r1:a1",
+          "T5:r1:a6",
+          "T4:r1:a4"
+        ]
+      },
+      "screened": {
+        "objective": 16.446280129224444,
+        "feasible": true,
+        "lower_bound": 16.446280129224444,
+        "upper_bound": 16.446280129224444,
+        "relative_gap": 0.0,
+        "exact_edge_evaluations": 98,
+        "total_possible_edges": 195,
+        "safely_pruned_edges": 97,
+        "runtime_seconds": 40.13968199999363,
+        "group_order": [
+          "T3",
+          "T1",
+          "T2",
+          "T5",
+          "T4"
+        ],
+        "poses": [
+          "T3:r0:a2",
+          "T1:r1:a1",
+          "T2:r1:a1",
+          "T5:r1:a6",
+          "T4:r1:a4"
+        ]
+      },
+      "query_reduction": 0.33333333333333337,
+      "screened_query_reduction_vs_full": 0.49743589743589745,
+      "screening_additional_query_reduction": 0.24615384615384617,
+      "runtime_ratio_screened_vs_lazy": 0.7653167185658285,
+      "runtime_ratio_lazy_vs_full": 0.48260853430451506,
+      "one_shot_objective_loss": null,
+      "one_shot_feasible": false,
+      "screened_faster_than_lazy": true
+    },
+    {
+      "family": "rooms",
+      "seed": 2,
+      "targets": 5,
+      "candidates_per_target": 3,
+      "target_means": [
+        [
+          4.4,
+          2.0
+        ],
+        [
+          2.8,
+          1.2
+        ],
+        [
+          5.2,
+          0.4
+        ],
+        [
+          0.8,
+          3.2
+        ],
+        [
+          2.0,
+          5.2
+        ]
+      ],
+      "total_directed_edges": 195,
+      "full": {
+        "objective": 17.951585723525504,
+        "feasible": true,
+        "lower_bound": 17.951585723525504,
+        "upper_bound": 17.951585723525504,
+        "relative_gap": 0.0,
+        "exact_edge_evaluations": 195,
+        "total_possible_edges": 195,
+        "safely_pruned_edges": 0,
+        "runtime_seconds": 73.35929330000363,
+        "group_order": [
+          "T2",
+          "T3",
+          "T1",
+          "T5",
+          "T4"
+        ],
+        "poses": [
+          "T2:r1:a6",
+          "T3:r1:a0",
+          "T1:r1:a2",
+          "T5:r1:a4",
+          "T4:r1:a4"
+        ]
+      },
+      "one_shot": {
+        "objective": null,
+        "feasible": false,
+        "lower_bound": 10.06848149618149,
+        "upper_bound": null,
+        "relative_gap": null,
+        "exact_edge_evaluations": 5,
+        "total_possible_edges": 195,
+        "safely_pruned_edges": 0,
+        "runtime_seconds": 1.7176294999953825,
+        "group_order": [
+          "T2",
+          "T3",
+          "T1",
+          "T4",
+          "T5"
+        ],
+        "poses": [
+          "T2:r1:a1",
+          "T3:r1:a0",
+          "T1:r1:a1",
+          "T4:r1:a4",
+          "T5:r1:a0"
+        ]
+      },
+      "lazy": {
+        "objective": 17.951585723525504,
+        "feasible": true,
+        "lower_bound": 17.951585723525504,
+        "upper_bound": 17.951585723525504,
+        "relative_gap": 0.0,
+        "exact_edge_evaluations": 117,
+        "total_possible_edges": 195,
+        "safely_pruned_edges": 0,
+        "runtime_seconds": 50.69120299999486,
+        "group_order": [
+          "T2",
+          "T3",
+          "T1",
+          "T5",
+          "T4"
+        ],
+        "poses": [
+          "T2:r1:a6",
+          "T3:r1:a0",
+          "T1:r1:a2",
+          "T5:r1:a4",
+          "T4:r1:a4"
+        ]
+      },
+      "screened": {
+        "objective": 17.951585723525504,
+        "feasible": true,
+        "lower_bound": 17.951585723525504,
+        "upper_bound": 17.951585723525504,
+        "relative_gap": 0.0,
+        "exact_edge_evaluations": 109,
+        "total_possible_edges": 195,
+        "safely_pruned_edges": 86,
+        "runtime_seconds": 40.69795869999507,
+        "group_order": [
+          "T2",
+          "T3",
+          "T1",
+          "T5",
+          "T4"
+        ],
+        "poses": [
+          "T2:r1:a6",
+          "T3:r1:a0",
+          "T1:r1:a2",
+          "T5:r1:a4",
+          "T4:r1:a4"
+        ]
+      },
+      "query_reduction": 0.4,
+      "screened_query_reduction_vs_full": 0.441025641025641,
+      "screening_additional_query_reduction": 0.06837606837606836,
+      "runtime_ratio_screened_vs_lazy": 0.802860383881582,
+      "runtime_ratio_lazy_vs_full": 0.6909990639180864,
+      "one_shot_objective_loss": null,
+      "one_shot_feasible": false,
+      "screened_faster_than_lazy": true
+    }
+  ]
+}

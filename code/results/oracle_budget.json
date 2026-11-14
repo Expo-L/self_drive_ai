@@ -1,0 +1,674 @@
+{
+  "status": "hybrid_astar_expansion_budget_comparison",
+  "protocol": {
+    "low_cap": 50000,
+    "high_cap": 200000,
+    "specs": [
+      {
+        "family": "aisles",
+        "targets": 4,
+        "seed": 0
+      },
+      {
+        "family": "aisles",
+        "targets": 4,
+        "seed": 1
+      },
+      {
+        "family": "aisles",
+        "targets": 4,
+        "seed": 2
+      },
+      {
+        "family": "aisles",
+        "targets": 5,
+        "seed": 0
+      },
+      {
+        "family": "aisles",
+        "targets": 5,
+        "seed": 1
+      },
+      {
+        "family": "aisles",
+        "targets": 5,
+        "seed": 2
+      },
+      {
+        "family": "rooms",
+        "targets": 4,
+        "seed": 0
+      },
+      {
+        "family": "rooms",
+        "targets": 4,
+        "seed": 1
+      },
+      {
+        "family": "rooms",
+        "targets": 4,
+        "seed": 2
+      },
+      {
+        "family": "rooms",
+        "targets": 5,
+        "seed": 0
+      },
+      {
+        "family": "rooms",
+        "targets": 5,
+        "seed": 1
+      },
+      {
+        "family": "rooms",
+        "targets": 5,
+        "seed": 2
+      },
+      {
+        "family": "pillars",
+        "targets": 4,
+        "seed": 0
+      },
+      {
+        "family": "pillars",
+        "targets": 4,
+        "seed": 1
+      },
+      {
+        "family": "pillars",
+        "targets": 4,
+        "seed": 2
+      },
+      {
+        "family": "pillars",
+        "targets": 5,
+        "seed": 0
+      },
+      {
+        "family": "pillars",
+        "targets": 5,
+        "seed": 1
+      },
+      {
+        "family": "pillars",
+        "targets": 5,
+        "seed": 2
+      }
+    ]
+  },
+  "attempted_instances": 18,
+  "valid_instances": 18,
+  "failures": [],
+  "summary": {
+    "instances": 18,
+    "failed_at_50k": 463,
+    "cap_hits_at_50k": 0,
+    "became_finite_at_200k": 0,
+    "still_infinite_at_200k": 0,
+    "changed_finite_costs": 0,
+    "objective_changed": 0,
+    "max_objective_delta": 0.0,
+    "same_route": 18
+  },
+  "wall_clock_seconds": 146.08755749999546,
+  "instances": [
+    {
+      "family": "aisles",
+      "targets": 4,
+      "seed": 0,
+      "low": {
+        "cap": 50000,
+        "edges": 120,
+        "finite": 80,
+        "failed": 40,
+        "cap_hits": 0,
+        "expanded_states": 607843,
+        "runtime_seconds": 32.908922500006156
+      },
+      "high": {
+        "cap": 200000,
+        "reevaluated_cap_hits": 0,
+        "became_finite": 0,
+        "still_infinite": 0,
+        "runtime_seconds": 4.5199994929134846e-05,
+        "expanded_states": 0
+      },
+      "failed_at_50k": 40,
+      "cap_hits_at_50k": 0,
+      "became_finite": 0,
+      "still_infinite": 0,
+      "changed_finite_costs": 0,
+      "low_objective": 20.417834978212284,
+      "high_objective": 20.417834978212284,
+      "objective_delta": 0.0,
+      "same_route": true
+    },
+    {
+      "family": "aisles",
+      "targets": 4,
+      "seed": 1,
+      "low": {
+        "cap": 50000,
+        "edges": 120,
+        "finite": 92,
+        "failed": 28,
+        "cap_hits": 0,
+        "expanded_states": 617045,
+        "runtime_seconds": 33.11456860000908
+      },
+      "high": {
+        "cap": 200000,
+        "reevaluated_cap_hits": 0,
+        "became_finite": 0,
+        "still_infinite": 0,
+        "runtime_seconds": 3.7300007534213364e-05,
+        "expanded_states": 0
+      },
+      "failed_at_50k": 28,
+      "cap_hits_at_50k": 0,
+      "became_finite": 0,
+      "still_infinite": 0,
+      "changed_finite_costs": 0,
+      "low_objective": 23.552343166465302,
+      "high_objective": 23.552343166465302,
+      "objective_delta": 0.0,
+      "same_route": true
+    },
+    {
+      "family": "aisles",
+      "targets": 4,
+      "seed": 2,
+      "low": {
+        "cap": 50000,
+        "edges": 120,
+        "finite": 77,
+        "failed": 43,
+        "cap_hits": 0,
+        "expanded_states": 740640,
+        "runtime_seconds": 40.21250880000298
+      },
+      "high": {
+        "cap": 200000,
+        "reevaluated_cap_hits": 0,
+        "became_finite": 0,
+        "still_infinite": 0,
+        "runtime_seconds": 4.8300003982149065e-05,
+        "expanded_states": 0
+      },
+      "failed_at_50k": 43,
+      "cap_hits_at_50k": 0,
+      "became_finite": 0,
+      "still_infinite": 0,
+      "changed_finite_costs": 0,
+      "low_objective": 28.082057904876287,
+      "high_objective": 28.082057904876287,
+      "objective_delta": 0.0,
+      "same_route": true
+    },
+    {
+      "family": "aisles",
+      "targets": 5,
+      "seed": 0,
+      "low": {
+        "cap": 50000,
+        "edges": 195,
+        "finite": 139,
+        "failed": 56,
+        "cap_hits": 0,
+        "expanded_states": 1119781,
+        "runtime_seconds": 60.369303300001775
+      },
+      "high": {
+        "cap": 200000,
+        "reevaluated_cap_hits": 0,
+        "became_finite": 0,
+        "still_infinite": 0,
+        "runtime_seconds": 7.609999738633633e-05,
+        "expanded_states": 0
+      },
+      "failed_at_50k": 56,
+      "cap_hits_at_50k": 0,
+      "became_finite": 0,
+      "still_infinite": 0,
+      "changed_finite_costs": 0,
+      "low_objective": 24.565049732949266,
+      "high_objective": 24.565049732949266,
+      "objective_delta": 0.0,
+      "same_route": true
+    },
+    {
+      "family": "aisles",
+      "targets": 5,
+      "seed": 1,
+      "low": {
+        "cap": 50000,
+        "edges": 195,
+        "finite": 161,
+        "failed": 34,
+        "cap_hits": 0,
+        "expanded_states": 786188,
+        "runtime_seconds": 42.27248970000073
+      },
+      "high": {
+        "cap": 200000,
+        "reevaluated_cap_hits": 0,
+        "became_finite": 0,
+        "still_infinite": 0,
+        "runtime_seconds": 5.18000015290454e-05,
+        "expanded_states": 0
+      },
+      "failed_at_50k": 34,
+      "cap_hits_at_50k": 0,
+      "became_finite": 0,
+      "still_infinite": 0,
+      "changed_finite_costs": 0,
+      "low_objective": 18.427724826586466,
+      "high_objective": 18.427724826586466,
+      "objective_delta": 0.0,
+      "same_route": true
+    },
+    {
+      "family": "aisles",
+      "targets": 5,
+      "seed": 2,
+      "low": {
+        "cap": 50000,
+        "edges": 195,
+        "finite": 166,
+        "failed": 29,
+        "cap_hits": 0,
+        "expanded_states": 762138,
+        "runtime_seconds": 41.55411620000086
+      },
+      "high": {
+        "cap": 200000,
+        "reevaluated_cap_hits": 0,
+        "became_finite": 0,
+        "still_infinite": 0,
+        "runtime_seconds": 4.880000778939575e-05,
+        "expanded_states": 0
+      },
+      "failed_at_50k": 29,
+      "cap_hits_at_50k": 0,
+      "became_finite": 0,
+      "still_infinite": 0,
+      "changed_finite_costs": 0,
+      "low_objective": 21.47166612700969,
+      "high_objective": 21.47166612700969,
+      "objective_delta": 0.0,
+      "same_route": true
+    },
+    {
+      "family": "pillars",
+      "targets": 4,
+      "seed": 0,
+      "low": {
+        "cap": 50000,
+        "edges": 120,
+        "finite": 108,
+        "failed": 12,
+        "cap_hits": 0,
+        "expanded_states": 385689,
+        "runtime_seconds": 22.457386699999915
+      },
+      "high": {
+        "cap": 200000,
+        "reevaluated_cap_hits": 0,
+        "became_finite": 0,
+        "still_infinite": 0,
+        "runtime_seconds": 2.6299996534362435e-05,
+        "expanded_states": 0
+      },
+      "failed_at_50k": 12,
+      "cap_hits_at_50k": 0,
+      "became_finite": 0,
+      "still_infinite": 0,
+      "changed_finite_costs": 0,
+      "low_objective": 14.398188672471026,
+      "high_objective": 14.398188672471026,
+      "objective_delta": 0.0,
+      "same_route": true
+    },
+    {
+      "family": "pillars",
+      "targets": 4,
+      "seed": 1,
+      "low": {
+        "cap": 50000,
+        "edges": 120,
+        "finite": 106,
+        "failed": 14,
+        "cap_hits": 0,
+        "expanded_states": 447793,
+        "runtime_seconds": 25.93158369998855
+      },
+      "high": {
+        "cap": 200000,
+        "reevaluated_cap_hits": 0,
+        "became_finite": 0,
+        "still_infinite": 0,
+        "runtime_seconds": 2.820001100189984e-05,
+        "expanded_states": 0
+      },
+      "failed_at_50k": 14,
+      "cap_hits_at_50k": 0,
+      "became_finite": 0,
+      "still_infinite": 0,
+      "changed_finite_costs": 0,
+      "low_objective": 15.500282900301343,
+      "high_objective": 15.500282900301343,
+      "objective_delta": 0.0,
+      "same_route": true
+    },
+    {
+      "family": "pillars",
+      "targets": 4,
+      "seed": 2,
+      "low": {
+        "cap": 50000,
+        "edges": 120,
+        "finite": 108,
+        "failed": 12,
+        "cap_hits": 0,
+        "expanded_states": 393417,
+        "runtime_seconds": 22.742513899996993
+      },
+      "high": {
+        "cap": 200000,
+        "reevaluated_cap_hits": 0,
+        "became_finite": 0,
+        "still_infinite": 0,
+        "runtime_seconds": 2.6900001103058457e-05,
+        "expanded_states": 0
+      },
+      "failed_at_50k": 12,
+      "cap_hits_at_50k": 0,
+      "became_finite": 0,
+      "still_infinite": 0,
+      "changed_finite_costs": 0,
+      "low_objective": 13.081251962476722,
+      "high_objective": 13.081251962476722,
+      "objective_delta": 0.0,
+      "same_route": true
+    },
+    {
+      "family": "pillars",
+      "targets": 5,
+      "seed": 0,
+      "low": {
+        "cap": 50000,
+        "edges": 195,
+        "finite": 168,
+        "failed": 27,
+        "cap_hits": 0,
+        "expanded_states": 755399,
+        "runtime_seconds": 44.29471430000558
+      },
+      "high": {
+        "cap": 200000,
+        "reevaluated_cap_hits": 0,
+        "became_finite": 0,
+        "still_infinite": 0,
+        "runtime_seconds": 4.339999577496201e-05,
+        "expanded_states": 0
+      },
+      "failed_at_50k": 27,
+      "cap_hits_at_50k": 0,
+      "became_finite": 0,
+      "still_infinite": 0,
+      "changed_finite_costs": 0,
+      "low_objective": 13.963585802896594,
+      "high_objective": 13.963585802896594,
+      "objective_delta": 0.0,
+      "same_route": true
+    },
+    {
+      "family": "pillars",
+      "targets": 5,
+      "seed": 1,
+      "low": {
+        "cap": 50000,
+        "edges": 195,
+        "finite": 175,
+        "failed": 20,
+        "cap_hits": 0,
+        "expanded_states": 658824,
+        "runtime_seconds": 38.55142389998946
+      },
+      "high": {
+        "cap": 200000,
+        "reevaluated_cap_hits": 0,
+        "became_finite": 0,
+        "still_infinite": 0,
+        "runtime_seconds": 3.929999365936965e-05,
+        "expanded_states": 0
+      },
+      "failed_at_50k": 20,
+      "cap_hits_at_50k": 0,
+      "became_finite": 0,
+      "still_infinite": 0,
+      "changed_finite_costs": 0,
+      "low_objective": 15.88734980337572,
+      "high_objective": 15.88734980337572,
+      "objective_delta": 0.0,
+      "same_route": true
+    },
+    {
+      "family": "pillars",
+      "targets": 5,
+      "seed": 2,
+      "low": {
+        "cap": 50000,
+        "edges": 195,
+        "finite": 171,
+        "failed": 24,
+        "cap_hits": 0,
+        "expanded_states": 717094,
+        "runtime_seconds": 42.13451430000714
+      },
+      "high": {
+        "cap": 200000,
+        "reevaluated_cap_hits": 0,
+        "became_finite": 0,
+        "still_infinite": 0,
+        "runtime_seconds": 4.199999966658652e-05,
+        "expanded_states": 0
+      },
+      "failed_at_50k": 24,
+      "cap_hits_at_50k": 0,
+      "became_finite": 0,
+      "still_infinite": 0,
+      "changed_finite_costs": 0,
+      "low_objective": 14.91905174281083,
+      "high_objective": 14.91905174281083,
+      "objective_delta": 0.0,
+      "same_route": true
+    },
+    {
+      "family": "rooms",
+      "targets": 4,
+      "seed": 0,
+      "low": {
+        "cap": 50000,
+        "edges": 120,
+        "finite": 101,
+        "failed": 19,
+        "cap_hits": 0,
+        "expanded_states": 780894,
+        "runtime_seconds": 44.848964899996645
+      },
+      "high": {
+        "cap": 200000,
+        "reevaluated_cap_hits": 0,
+        "became_finite": 0,
+        "still_infinite": 0,
+        "runtime_seconds": 3.300000389572233e-05,
+        "expanded_states": 0
+      },
+      "failed_at_50k": 19,
+      "cap_hits_at_50k": 0,
+      "became_finite": 0,
+      "still_infinite": 0,
+      "changed_finite_costs": 0,
+      "low_objective": 18.864980628669592,
+      "high_objective": 18.864980628669592,
+      "objective_delta": 0.0,
+      "same_route": true
+    },
+    {
+      "family": "rooms",
+      "targets": 4,
+      "seed": 1,
+      "low": {
+        "cap": 50000,
+        "edges": 120,
+        "finite": 106,
+        "failed": 14,
+        "cap_hits": 0,
+        "expanded_states": 705233,
+        "runtime_seconds": 41.2467786000052
+      },
+      "high": {
+        "cap": 200000,
+        "reevaluated_cap_hits": 0,
+        "became_finite": 0,
+        "still_infinite": 0,
+        "runtime_seconds": 3.0499999411404133e-05,
+        "expanded_states": 0
+      },
+      "failed_at_50k": 14,
+      "cap_hits_at_50k": 0,
+      "became_finite": 0,
+      "still_infinite": 0,
+      "changed_finite_costs": 0,
+      "low_objective": 14.120962356454381,
+      "high_objective": 14.120962356454381,
+      "objective_delta": 0.0,
+      "same_route": true
+    },
+    {
+      "family": "rooms",
+      "targets": 4,
+      "seed": 2,
+      "low": {
+        "cap": 50000,
+        "edges": 120,
+        "finite": 114,
+        "failed": 6,
+        "cap_hits": 0,
+        "expanded_states": 642547,
+        "runtime_seconds": 36.72109880000062
+      },
+      "high": {
+        "cap": 200000,
+        "reevaluated_cap_hits": 0,
+        "became_finite": 0,
+        "still_infinite": 0,
+        "runtime_seconds": 2.95999925583601e-05,
+        "expanded_states": 0
+      },
+      "failed_at_50k": 6,
+      "cap_hits_at_50k": 0,
+      "became_finite": 0,
+      "still_infinite": 0,
+      "changed_finite_costs": 0,
+      "low_objective": 16.867528636766075,
+      "high_objective": 16.867528636766075,
+      "objective_delta": 0.0,
+      "same_route": true
+    },
+    {
+      "family": "rooms",
+      "targets": 5,
+      "seed": 0,
+      "low": {
+        "cap": 50000,
+        "edges": 195,
+        "finite": 166,
+        "failed": 29,
+        "cap_hits": 0,
+        "expanded_states": 1108385,
+        "runtime_seconds": 63.629631400006474
+      },
+      "high": {
+        "cap": 200000,
+        "reevaluated_cap_hits": 0,
+        "became_finite": 0,
+        "still_infinite": 0,
+        "runtime_seconds": 4.959999932907522e-05,
+        "expanded_states": 0
+      },
+      "failed_at_50k": 29,
+      "cap_hits_at_50k": 0,
+      "became_finite": 0,
+      "still_infinite": 0,
+      "changed_finite_costs": 0,
+      "low_objective": 18.179122650680664,
+      "high_objective": 18.179122650680664,
+      "objective_delta": 0.0,
+      "same_route": true
+    },
+    {
+      "family": "rooms",
+      "targets": 5,
+      "seed": 1,
+      "low": {
+        "cap": 50000,
+        "edges": 195,
+        "finite": 168,
+        "failed": 27,
+        "cap_hits": 0,
+        "expanded_states": 1287257,
+        "runtime_seconds": 73.45302390000143
+      },
+      "high": {
+        "cap": 200000,
+        "reevaluated_cap_hits": 0,
+        "became_finite": 0,
+        "still_infinite": 0,
+        "runtime_seconds": 4.6499990276061e-05,
+        "expanded_states": 0
+      },
+      "failed_at_50k": 27,
+      "cap_hits_at_50k": 0,
+      "became_finite": 0,
+      "still_infinite": 0,
+      "changed_finite_costs": 0,
+      "low_objective": 16.446280129224444,
+      "high_objective": 16.446280129224444,
+      "objective_delta": 0.0,
+      "same_route": true
+    },
+    {
+      "family": "rooms",
+      "targets": 5,
+      "seed": 2,
+      "low": {
+        "cap": 50000,
+        "edges": 195,
+        "finite": 166,
+        "failed": 29,
+        "cap_hits": 0,
+        "expanded_states": 1322208,
+        "runtime_seconds": 77.3263936000003
+      },
+      "high": {
+        "cap": 200000,
+        "reevaluated_cap_hits": 0,
+        "became_finite": 0,
+        "still_infinite": 0,
+        "runtime_seconds": 4.4800006435252726e-05,
+        "expanded_states": 0
+      },
+      "failed_at_50k": 29,
+      "cap_hits_at_50k": 0,
+      "became_finite": 0,
+      "still_infinite": 0,
+      "changed_finite_costs": 0,
+      "low_objective": 17.951585723525504,
+      "high_objective": 17.951585723525504,
+      "objective_delta": 0.0,
+      "same_route": true
+    }
+  ]
+}

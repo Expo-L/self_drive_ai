@@ -1,0 +1,206 @@
+{
+  "status": "pilot_only_proxy_motion_cost",
+  "risk": {
+    "epsilon": 0.15,
+    "confidence": 0.95,
+    "calibration_trials": 240,
+    "holdout_trials": 1200,
+    "targets": {
+      "T1": {
+        "generated": 32,
+        "accepted": 17,
+        "selected": [
+          {
+            "label": "T1:r1:a0",
+            "empirical_success": 1.0,
+            "lower_confidence": 0.987595361949591,
+            "holdout_success": 1.0
+          },
+          {
+            "label": "T1:r1:a1",
+            "empirical_success": 1.0,
+            "lower_confidence": 0.987595361949591,
+            "holdout_success": 0.9991666666666666
+          },
+          {
+            "label": "T1:r1:a3",
+            "empirical_success": 1.0,
+            "lower_confidence": 0.987595361949591,
+            "holdout_success": 0.9975
+          },
+          {
+            "label": "T1:r1:a4",
+            "empirical_success": 1.0,
+            "lower_confidence": 0.987595361949591,
+            "holdout_success": 1.0
+          }
+        ]
+      },
+      "T2": {
+        "generated": 32,
+        "accepted": 15,
+        "selected": [
+          {
+            "label": "T2:r1:a0",
+            "empirical_success": 1.0,
+            "lower_confidence": 0.987595361949591,
+            "holdout_success": 0.9975
+          },
+          {
+            "label": "T2:r1:a1",
+            "empirical_success": 1.0,
+            "lower_confidence": 0.987595361949591,
+            "holdout_success": 0.9975
+          },
+          {
+            "label": "T2:r1:a3",
+            "empirical_success": 0.9958333333333333,
+            "lower_confidence": 0.9803874003712967,
+            "holdout_success": 0.9941666666666666
+          },
+          {
+            "label": "T2:r1:a4",
+            "empirical_success": 0.9916666666666667,
+            "lower_confidence": 0.9740013119129629,
+            "holdout_success": 0.995
+          }
+        ]
+      },
+      "T3": {
+        "generated": 32,
+        "accepted": 8,
+        "selected": [
+          {
+            "label": "T3:r1:a6",
+            "empirical_success": 0.9916666666666667,
+            "lower_confidence": 0.9740013119129629,
+            "holdout_success": 0.9791666666666666
+          },
+          {
+            "label": "T3:r1:a1",
+            "empirical_success": 0.9875,
+            "lower_confidence": 0.9680118002459595,
+            "holdout_success": 0.9766666666666667
+          },
+          {
+            "label": "T3:r1:a3",
+            "empirical_success": 0.9833333333333333,
+            "lower_confidence": 0.9622683867528163,
+            "holdout_success": 0.9791666666666666
+          },
+          {
+            "label": "T3:r1:a0",
+            "empirical_success": 0.9791666666666666,
+            "lower_confidence": 0.9566972663551172,
+            "holdout_success": 0.9825
+          }
+        ]
+      },
+      "T4": {
+        "generated": 32,
+        "accepted": 12,
+        "selected": [
+          {
+            "label": "T4:r1:a6",
+            "empirical_success": 0.9958333333333333,
+            "lower_confidence": 0.9803874003712967,
+            "holdout_success": 0.9925
+          },
+          {
+            "label": "T4:r1:a0",
+            "empirical_success": 0.9916666666666667,
+            "lower_confidence": 0.9740013119129629,
+            "holdout_success": 0.9783333333333334
+          },
+          {
+            "label": "T4:r1:a1",
+            "empirical_success": 0.9916666666666667,
+            "lower_confidence": 0.9740013119129629,
+            "holdout_success": 0.9908333333333333
+          },
+          {
+            "label": "T4:r1:a2",
+            "empirical_success": 0.9916666666666667,
+            "lower_confidence": 0.9740013119129629,
+            "holdout_success": 0.9933333333333333
+          }
+        ]
+      },
+      "T5": {
+        "generated": 32,
+        "accepted": 11,
+        "selected": [
+          {
+            "label": "T5:r1:a0",
+            "empirical_success": 1.0,
+            "lower_confidence": 0.987595361949591,
+            "holdout_success": 0.9916666666666667
+          },
+          {
+            "label": "T5:r1:a4",
+            "empirical_success": 0.9916666666666667,
+            "lower_confidence": 0.9740013119129629,
+            "holdout_success": 0.99
+          },
+          {
+            "label": "T5:r1:a1",
+            "empirical_success": 0.9875,
+            "lower_confidence": 0.9680118002459595,
+            "holdout_success": 0.9891666666666666
+          },
+          {
+            "label": "T5:r1:a3",
+            "empirical_success": 0.9875,
+            "lower_confidence": 0.9680118002459595,
+            "holdout_success": 0.9891666666666666
+          }
+        ]
+      }
+    }
+  },
+  "routing": {
+    "full_matrix": {
+      "objective": 11.417258930115727,
+      "exact_edge_evaluations": 340,
+      "total_possible_edges": 340,
+      "group_order": [
+        "T1",
+        "T5",
+        "T4",
+        "T3",
+        "T2"
+      ],
+      "poses": [
+        "T1:r1:a1",
+        "T5:r1:a3",
+        "T4:r1:a1",
+        "T3:r1:a0",
+        "T2:r1:a4"
+      ]
+    },
+    "bounded_lazy": {
+      "objective": 11.417258930115725,
+      "lower_bound": 11.417258930115727,
+      "upper_bound": 11.417258930115725,
+      "relative_gap": 0.0,
+      "exact_edge_evaluations": 62,
+      "total_possible_edges": 340,
+      "group_order": [
+        "T1",
+        "T5",
+        "T4",
+        "T3",
+        "T2"
+      ],
+      "poses": [
+        "T1:r1:a1",
+        "T5:r1:a3",
+        "T4:r1:a1",
+        "T3:r1:a0",
+        "T2:r1:a4"
+      ]
+    },
+    "exact_query_reduction": 0.8176470588235294,
+    "objective_difference": -1.7763568394002505e-15
+  }
+}

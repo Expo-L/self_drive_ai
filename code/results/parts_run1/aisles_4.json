@@ -1,0 +1,463 @@
+{
+  "status": "hybrid_astar_multi_map_suite",
+  "protocol": {
+    "map_size_metres": 6.0,
+    "resolution": 0.2,
+    "robot_radius": 0.1,
+    "minimum_turning_radius": 0.55,
+    "primitive_length": 0.3,
+    "heading_bins": 24,
+    "max_expansions": 50000,
+    "families": [
+      "aisles"
+    ],
+    "targets": [
+      4
+    ],
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "candidates_per_target": 3,
+    "calibration_trials": 220,
+    "risk_epsilon": 0.15,
+    "confidence": 0.95
+  },
+  "attempted_instances": 3,
+  "valid_instances": 3,
+  "failures": [],
+  "overall": {
+    "instances": 3,
+    "mean_query_reduction": 0.19444444444444445,
+    "median_query_reduction": 0.15000000000000002,
+    "minimum_query_reduction": 0.125,
+    "maximum_query_reduction": 0.30833333333333335,
+    "positive_reduction_fraction": 1.0,
+    "mean_screened_query_reduction": 0.24444444444444446,
+    "mean_screening_additional_query_reduction": 0.05873240862610104,
+    "screening_query_gain_fraction": 0.6666666666666666,
+    "mean_runtime_ratio_screened_vs_lazy": 0.9981241282940229,
+    "screening_faster_fraction": 0.6666666666666666,
+    "max_objective_difference": 3.552713678800501e-15,
+    "one_shot_feasible_fraction": 0.3333333333333333,
+    "mean_one_shot_loss": 0.1378469413788319,
+    "maximum_one_shot_loss": 0.1378469413788319
+  },
+  "by_family": {
+    "aisles": {
+      "instances": 3,
+      "mean_query_reduction": 0.19444444444444445,
+      "median_query_reduction": 0.15000000000000002,
+      "minimum_query_reduction": 0.125,
+      "maximum_query_reduction": 0.30833333333333335,
+      "positive_reduction_fraction": 1.0,
+      "mean_screened_query_reduction": 0.24444444444444446,
+      "mean_screening_additional_query_reduction": 0.05873240862610104,
+      "screening_query_gain_fraction": 0.6666666666666666,
+      "mean_runtime_ratio_screened_vs_lazy": 0.9981241282940229,
+      "screening_faster_fraction": 0.6666666666666666,
+      "max_objective_difference": 3.552713678800501e-15,
+      "one_shot_feasible_fraction": 0.3333333333333333,
+      "mean_one_shot_loss": 0.1378469413788319,
+      "maximum_one_shot_loss": 0.1378469413788319
+    }
+  },
+  "by_targets": {
+    "4": {
+      "instances": 3,
+      "mean_query_reduction": 0.19444444444444445,
+      "median_query_reduction": 0.15000000000000002,
+      "minimum_query_reduction": 0.125,
+      "maximum_query_reduction": 0.30833333333333335,
+      "positive_reduction_fraction": 1.0,
+      "mean_screened_query_reduction": 0.24444444444444446,
+      "mean_screening_additional_query_reduction": 0.05873240862610104,
+      "screening_query_gain_fraction": 0.6666666666666666,
+      "mean_runtime_ratio_screened_vs_lazy": 0.9981241282940229,
+      "screening_faster_fraction": 0.6666666666666666,
+      "max_objective_difference": 3.552713678800501e-15,
+      "one_shot_feasible_fraction": 0.3333333333333333,
+      "mean_one_shot_loss": 0.1378469413788319,
+      "maximum_one_shot_loss": 0.1378469413788319
+    }
+  },
+  "wall_clock_seconds": 336.63334349999786,
+  "instances": [
+    {
+      "family": "aisles",
+      "seed": 0,
+      "targets": 4,
+      "candidates_per_target": 3,
+      "target_means": [
+        [
+          5.2,
+          4.4
+        ],
+        [
+          5.2,
+          2.0
+        ],
+        [
+          5.6,
+          0.4
+        ],
+        [
+          2.4,
+          5.6
+        ]
+      ],
+      "total_directed_edges": 120,
+      "full": {
+        "objective": 20.417834978212284,
+        "feasible": true,
+        "lower_bound": 20.417834978212284,
+        "upper_bound": 20.417834978212284,
+        "relative_gap": 0.0,
+        "exact_edge_evaluations": 120,
+        "total_possible_edges": 120,
+        "safely_pruned_edges": 0,
+        "runtime_seconds": 35.30065999999351,
+        "group_order": [
+          "T4",
+          "T1",
+          "T2",
+          "T3"
+        ],
+        "poses": [
+          "T4:r0:a3",
+          "T1:r1:a5",
+          "T2:r1:a6",
+          "T3:r1:a6"
+        ]
+      },
+      "one_shot": {
+        "objective": 23.232371079536577,
+        "feasible": true,
+        "lower_bound": 11.060070131246318,
+        "upper_bound": 23.232371079536577,
+        "relative_gap": 0.5239370921985576,
+        "exact_edge_evaluations": 4,
+        "total_possible_edges": 120,
+        "safely_pruned_edges": 0,
+        "runtime_seconds": 0.4046148000052199,
+        "group_order": [
+          "T4",
+          "T1",
+          "T2",
+          "T3"
+        ],
+        "poses": [
+          "T4:r1:a3",
+          "T1:r1:a3",
+          "T2:r1:a3",
+          "T3:r1:a6"
+        ]
+      },
+      "lazy": {
+        "objective": 20.417834978212287,
+        "feasible": true,
+        "lower_bound": 20.417834978212284,
+        "upper_bound": 20.417834978212287,
+        "relative_gap": 1.740005089957664e-16,
+        "exact_edge_evaluations": 83,
+        "total_possible_edges": 120,
+        "safely_pruned_edges": 0,
+        "runtime_seconds": 29.05141580000054,
+        "group_order": [
+          "T4",
+          "T1",
+          "T2",
+          "T3"
+        ],
+        "poses": [
+          "T4:r0:a3",
+          "T1:r1:a5",
+          "T2:r1:a6",
+          "T3:r1:a6"
+        ]
+      },
+      "screened": {
+        "objective": 20.417834978212287,
+        "feasible": true,
+        "lower_bound": 20.417834978212284,
+        "upper_bound": 20.417834978212287,
+        "relative_gap": 1.740005089957664e-16,
+        "exact_edge_evaluations": 81,
+        "total_possible_edges": 120,
+        "safely_pruned_edges": 39,
+        "runtime_seconds": 24.367662400007248,
+        "group_order": [
+          "T4",
+          "T1",
+          "T2",
+          "T3"
+        ],
+        "poses": [
+          "T4:r0:a3",
+          "T1:r1:a5",
+          "T2:r1:a6",
+          "T3:r1:a6"
+        ]
+      },
+      "query_reduction": 0.30833333333333335,
+      "screened_query_reduction_vs_full": 0.32499999999999996,
+      "screening_additional_query_reduction": 0.02409638554216864,
+      "runtime_ratio_screened_vs_lazy": 0.8387771035932368,
+      "runtime_ratio_lazy_vs_full": 0.8229708962950234,
+      "one_shot_objective_loss": 0.1378469413788319,
+      "one_shot_feasible": true,
+      "screened_faster_than_lazy": true
+    },
+    {
+      "family": "aisles",
+      "seed": 1,
+      "targets": 4,
+      "candidates_per_target": 3,
+      "target_means": [
+        [
+          5.6,
+          4.0
+        ],
+        [
+          0.4,
+          5.2
+        ],
+        [
+          3.6,
+          3.2
+        ],
+        [
+          5.2,
+          0.4
+        ]
+      ],
+      "total_directed_edges": 120,
+      "full": {
+        "objective": 23.552343166465302,
+        "feasible": true,
+        "lower_bound": 23.552343166465302,
+        "upper_bound": 23.552343166465302,
+        "relative_gap": 0.0,
+        "exact_edge_evaluations": 120,
+        "total_possible_edges": 120,
+        "safely_pruned_edges": 0,
+        "runtime_seconds": 36.013597400000435,
+        "group_order": [
+          "T2",
+          "T3",
+          "T1",
+          "T4"
+        ],
+        "poses": [
+          "T2:r1:a2",
+          "T3:r0:a5",
+          "T1:r1:a7",
+          "T4:r1:a5"
+        ]
+      },
+      "one_shot": {
+        "objective": null,
+        "feasible": false,
+        "lower_bound": 10.633794453443675,
+        "upper_bound": null,
+        "relative_gap": null,
+        "exact_edge_evaluations": 4,
+        "total_possible_edges": 120,
+        "safely_pruned_edges": 0,
+        "runtime_seconds": 1.2797437999979593,
+        "group_order": [
+          "T2",
+          "T3",
+          "T1",
+          "T4"
+        ],
+        "poses": [
+          "T2:r1:a3",
+          "T3:r0:a5",
+          "T1:r1:a1",
+          "T4:r1:a6"
+        ]
+      },
+      "lazy": {
+        "objective": 23.552343166465306,
+        "feasible": true,
+        "lower_bound": 23.552343166465302,
+        "upper_bound": 23.552343166465306,
+        "relative_gap": 1.5084332177441205e-16,
+        "exact_edge_evaluations": 105,
+        "total_possible_edges": 120,
+        "safely_pruned_edges": 0,
+        "runtime_seconds": 34.99689589999616,
+        "group_order": [
+          "T2",
+          "T3",
+          "T1",
+          "T4"
+        ],
+        "poses": [
+          "T2:r1:a2",
+          "T3:r0:a5",
+          "T1:r1:a7",
+          "T4:r1:a5"
+        ]
+      },
+      "screened": {
+        "objective": 23.552343166465306,
+        "feasible": true,
+        "lower_bound": 23.552343166465302,
+        "upper_bound": 23.552343166465306,
+        "relative_gap": 1.5084332177441205e-16,
+        "exact_edge_evaluations": 88,
+        "total_possible_edges": 120,
+        "safely_pruned_edges": 32,
+        "runtime_seconds": 40.596742599998834,
+        "group_order": [
+          "T2",
+          "T3",
+          "T1",
+          "T4"
+        ],
+        "poses": [
+          "T2:r1:a2",
+          "T3:r0:a5",
+          "T1:r1:a7",
+          "T4:r1:a5"
+        ]
+      },
+      "query_reduction": 0.125,
+      "screened_query_reduction_vs_full": 0.2666666666666667,
+      "screening_additional_query_reduction": 0.16190476190476188,
+      "runtime_ratio_screened_vs_lazy": 1.1600098110416497,
+      "runtime_ratio_lazy_vs_full": 0.9717689546892013,
+      "one_shot_objective_loss": null,
+      "one_shot_feasible": false,
+      "screened_faster_than_lazy": false
+    },
+    {
+      "family": "aisles",
+      "seed": 2,
+      "targets": 4,
+      "candidates_per_target": 3,
+      "target_means": [
+        [
+          5.6,
+          0.4
+        ],
+        [
+          5.2,
+          2.0
+        ],
+        [
+          2.4,
+          2.8
+        ],
+        [
+          4.0,
+          4.0
+        ]
+      ],
+      "total_directed_edges": 120,
+      "full": {
+        "objective": 28.082057904876287,
+        "feasible": true,
+        "lower_bound": 28.082057904876287,
+        "upper_bound": 28.082057904876287,
+        "relative_gap": 0.0,
+        "exact_edge_evaluations": 120,
+        "total_possible_edges": 120,
+        "safely_pruned_edges": 0,
+        "runtime_seconds": 58.49515109999629,
+        "group_order": [
+          "T4",
+          "T2",
+          "T1",
+          "T3"
+        ],
+        "poses": [
+          "T4:r1:a6",
+          "T2:r1:a6",
+          "T1:r1:a6",
+          "T3:r1:a6"
+        ]
+      },
+      "one_shot": {
+        "objective": null,
+        "feasible": false,
+        "lower_bound": 7.17647316538588,
+        "upper_bound": null,
+        "relative_gap": null,
+        "exact_edge_evaluations": 4,
+        "total_possible_edges": 120,
+        "safely_pruned_edges": 0,
+        "runtime_seconds": 1.0934043000015663,
+        "group_order": [
+          "T3",
+          "T4",
+          "T2",
+          "T1"
+        ],
+        "poses": [
+          "T3:r1:a2",
+          "T4:r1:a2",
+          "T2:r1:a2",
+          "T1:r1:a7"
+        ]
+      },
+      "lazy": {
+        "objective": 28.08205790487629,
+        "feasible": true,
+        "lower_bound": 28.082057904876287,
+        "upper_bound": 28.08205790487629,
+        "relative_gap": 1.2651187070530157e-16,
+        "exact_edge_evaluations": 102,
+        "total_possible_edges": 120,
+        "safely_pruned_edges": 0,
+        "runtime_seconds": 37.38432159999502,
+        "group_order": [
+          "T4",
+          "T2",
+          "T1",
+          "T3"
+        ],
+        "poses": [
+          "T4:r1:a6",
+          "T2:r1:a6",
+          "T1:r1:a6",
+          "T3:r1:a6"
+        ]
+      },
+      "screened": {
+        "objective": 28.08205790487629,
+        "feasible": true,
+        "lower_bound": 28.082057904876287,
+        "upper_bound": 28.08205790487629,
+        "relative_gap": 1.2651187070530157e-16,
+        "exact_edge_evaluations": 103,
+        "total_possible_edges": 120,
+        "safely_pruned_edges": 17,
+        "runtime_seconds": 37.21928740000294,
+        "group_order": [
+          "T4",
+          "T2",
+          "T1",
+          "T3"
+        ],
+        "poses": [
+          "T4:r1:a6",
+          "T2:r1:a6",
+          "T1:r1:a6",
+          "T3:r1:a6"
+        ]
+      },
+      "query_reduction": 0.15000000000000002,
+      "screened_query_reduction_vs_full": 0.14166666666666672,
+      "screening_additional_query_reduction": -0.009803921568627416,
+      "runtime_ratio_screened_vs_lazy": 0.9955854702471825,
+      "runtime_ratio_lazy_vs_full": 0.6391012057749413,
+      "one_shot_objective_loss": null,
+      "one_shot_feasible": false,
+      "screened_faster_than_lazy": true
+    }
+  ]
+}

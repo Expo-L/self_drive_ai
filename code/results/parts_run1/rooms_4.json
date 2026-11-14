@@ -1,0 +1,463 @@
+{
+  "status": "hybrid_astar_multi_map_suite",
+  "protocol": {
+    "map_size_metres": 6.0,
+    "resolution": 0.2,
+    "robot_radius": 0.1,
+    "minimum_turning_radius": 0.55,
+    "primitive_length": 0.3,
+    "heading_bins": 24,
+    "max_expansions": 50000,
+    "families": [
+      "rooms"
+    ],
+    "targets": [
+      4
+    ],
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "candidates_per_target": 3,
+    "calibration_trials": 220,
+    "risk_epsilon": 0.15,
+    "confidence": 0.95
+  },
+  "attempted_instances": 3,
+  "valid_instances": 3,
+  "failures": [],
+  "overall": {
+    "instances": 3,
+    "mean_query_reduction": 0.39999999999999997,
+    "median_query_reduction": 0.3583333333333333,
+    "minimum_query_reduction": 0.33333333333333337,
+    "maximum_query_reduction": 0.5083333333333333,
+    "positive_reduction_fraction": 1.0,
+    "mean_screened_query_reduction": 0.48333333333333334,
+    "mean_screening_additional_query_reduction": 0.1318842174774378,
+    "screening_query_gain_fraction": 1.0,
+    "mean_runtime_ratio_screened_vs_lazy": 1.1185999074599642,
+    "screening_faster_fraction": 0.6666666666666666,
+    "max_objective_difference": 3.552713678800501e-15,
+    "one_shot_feasible_fraction": 1.0,
+    "mean_one_shot_loss": 0.3727316779724353,
+    "maximum_one_shot_loss": 0.7646394517324886
+  },
+  "by_family": {
+    "rooms": {
+      "instances": 3,
+      "mean_query_reduction": 0.39999999999999997,
+      "median_query_reduction": 0.3583333333333333,
+      "minimum_query_reduction": 0.33333333333333337,
+      "maximum_query_reduction": 0.5083333333333333,
+      "positive_reduction_fraction": 1.0,
+      "mean_screened_query_reduction": 0.48333333333333334,
+      "mean_screening_additional_query_reduction": 0.1318842174774378,
+      "screening_query_gain_fraction": 1.0,
+      "mean_runtime_ratio_screened_vs_lazy": 1.1185999074599642,
+      "screening_faster_fraction": 0.6666666666666666,
+      "max_objective_difference": 3.552713678800501e-15,
+      "one_shot_feasible_fraction": 1.0,
+      "mean_one_shot_loss": 0.3727316779724353,
+      "maximum_one_shot_loss": 0.7646394517324886
+    }
+  },
+  "by_targets": {
+    "4": {
+      "instances": 3,
+      "mean_query_reduction": 0.39999999999999997,
+      "median_query_reduction": 0.3583333333333333,
+      "minimum_query_reduction": 0.33333333333333337,
+      "maximum_query_reduction": 0.5083333333333333,
+      "positive_reduction_fraction": 1.0,
+      "mean_screened_query_reduction": 0.48333333333333334,
+      "mean_screening_additional_query_reduction": 0.1318842174774378,
+      "screening_query_gain_fraction": 1.0,
+      "mean_runtime_ratio_screened_vs_lazy": 1.1185999074599642,
+      "screening_faster_fraction": 0.6666666666666666,
+      "max_objective_difference": 3.552713678800501e-15,
+      "one_shot_feasible_fraction": 1.0,
+      "mean_one_shot_loss": 0.3727316779724353,
+      "maximum_one_shot_loss": 0.7646394517324886
+    }
+  },
+  "wall_clock_seconds": 318.1959302000032,
+  "instances": [
+    {
+      "family": "rooms",
+      "seed": 0,
+      "targets": 4,
+      "candidates_per_target": 3,
+      "target_means": [
+        [
+          2.4,
+          4.4
+        ],
+        [
+          5.6,
+          4.0
+        ],
+        [
+          2.0,
+          0.8
+        ],
+        [
+          0.8,
+          5.2
+        ]
+      ],
+      "total_directed_edges": 120,
+      "full": {
+        "objective": 18.864980628669592,
+        "feasible": true,
+        "lower_bound": 18.864980628669592,
+        "upper_bound": 18.864980628669592,
+        "relative_gap": 0.0,
+        "exact_edge_evaluations": 120,
+        "total_possible_edges": 120,
+        "safely_pruned_edges": 0,
+        "runtime_seconds": 49.646646299996064,
+        "group_order": [
+          "T3",
+          "T2",
+          "T1",
+          "T4"
+        ],
+        "poses": [
+          "T3:r1:a6",
+          "T2:r1:a1",
+          "T1:r1:a2",
+          "T4:r0:a4"
+        ]
+      },
+      "one_shot": {
+        "objective": 24.96265918666509,
+        "feasible": true,
+        "lower_bound": 9.07582106613696,
+        "upper_bound": 24.96265918666509,
+        "relative_gap": 0.6364241085747302,
+        "exact_edge_evaluations": 4,
+        "total_possible_edges": 120,
+        "safely_pruned_edges": 0,
+        "runtime_seconds": 0.9651525000081165,
+        "group_order": [
+          "T3",
+          "T1",
+          "T4",
+          "T2"
+        ],
+        "poses": [
+          "T3:r1:a6",
+          "T1:r1:a1",
+          "T4:r1:a4",
+          "T2:r1:a7"
+        ]
+      },
+      "lazy": {
+        "objective": 18.864980628669592,
+        "feasible": true,
+        "lower_bound": 18.864980628669592,
+        "upper_bound": 18.864980628669592,
+        "relative_gap": 0.0,
+        "exact_edge_evaluations": 80,
+        "total_possible_edges": 120,
+        "safely_pruned_edges": 0,
+        "runtime_seconds": 29.455786900012754,
+        "group_order": [
+          "T3",
+          "T2",
+          "T1",
+          "T4"
+        ],
+        "poses": [
+          "T3:r1:a6",
+          "T2:r1:a1",
+          "T1:r1:a2",
+          "T4:r0:a4"
+        ]
+      },
+      "screened": {
+        "objective": 18.864980628669592,
+        "feasible": true,
+        "lower_bound": 18.864980628669592,
+        "upper_bound": 18.864980628669592,
+        "relative_gap": 0.0,
+        "exact_edge_evaluations": 68,
+        "total_possible_edges": 120,
+        "safely_pruned_edges": 52,
+        "runtime_seconds": 27.199642599996878,
+        "group_order": [
+          "T3",
+          "T2",
+          "T1",
+          "T4"
+        ],
+        "poses": [
+          "T3:r1:a6",
+          "T2:r1:a1",
+          "T1:r1:a2",
+          "T4:r0:a4"
+        ]
+      },
+      "query_reduction": 0.33333333333333337,
+      "screened_query_reduction_vs_full": 0.43333333333333335,
+      "screening_additional_query_reduction": 0.15000000000000002,
+      "runtime_ratio_screened_vs_lazy": 0.9234057366155477,
+      "runtime_ratio_lazy_vs_full": 0.593308694448815,
+      "one_shot_objective_loss": 0.3232273956713583,
+      "one_shot_feasible": true,
+      "screened_faster_than_lazy": true
+    },
+    {
+      "family": "rooms",
+      "seed": 1,
+      "targets": 4,
+      "candidates_per_target": 3,
+      "target_means": [
+        [
+          3.2,
+          1.2
+        ],
+        [
+          5.6,
+          3.6
+        ],
+        [
+          1.6,
+          0.4
+        ],
+        [
+          3.2,
+          4.4
+        ]
+      ],
+      "total_directed_edges": 120,
+      "full": {
+        "objective": 14.120962356454381,
+        "feasible": true,
+        "lower_bound": 14.120962356454381,
+        "upper_bound": 14.120962356454381,
+        "relative_gap": 0.0,
+        "exact_edge_evaluations": 120,
+        "total_possible_edges": 120,
+        "safely_pruned_edges": 0,
+        "runtime_seconds": 46.258886800002074,
+        "group_order": [
+          "T3",
+          "T1",
+          "T2",
+          "T4"
+        ],
+        "poses": [
+          "T3:r1:a5",
+          "T1:r1:a7",
+          "T2:r1:a1",
+          "T4:r1:a6"
+        ]
+      },
+      "one_shot": {
+        "objective": 24.91840727062877,
+        "feasible": true,
+        "lower_bound": 6.846454722861141,
+        "upper_bound": 24.91840727062877,
+        "relative_gap": 0.7252450909681122,
+        "exact_edge_evaluations": 4,
+        "total_possible_edges": 120,
+        "safely_pruned_edges": 0,
+        "runtime_seconds": 1.146514499996556,
+        "group_order": [
+          "T3",
+          "T1",
+          "T4",
+          "T2"
+        ],
+        "poses": [
+          "T3:r1:a7",
+          "T1:r1:a7",
+          "T4:r1:a1",
+          "T2:r1:a0"
+        ]
+      },
+      "lazy": {
+        "objective": 14.120962356454381,
+        "feasible": true,
+        "lower_bound": 14.120962356454381,
+        "upper_bound": 14.120962356454381,
+        "relative_gap": 0.0,
+        "exact_edge_evaluations": 59,
+        "total_possible_edges": 120,
+        "safely_pruned_edges": 0,
+        "runtime_seconds": 23.158391100005247,
+        "group_order": [
+          "T3",
+          "T1",
+          "T2",
+          "T4"
+        ],
+        "poses": [
+          "T3:r1:a5",
+          "T1:r1:a7",
+          "T2:r1:a1",
+          "T4:r1:a6"
+        ]
+      },
+      "screened": {
+        "objective": 14.120962356454381,
+        "feasible": true,
+        "lower_bound": 14.120962356454381,
+        "upper_bound": 14.120962356454381,
+        "relative_gap": 0.0,
+        "exact_edge_evaluations": 56,
+        "total_possible_edges": 120,
+        "safely_pruned_edges": 64,
+        "runtime_seconds": 37.27170370001113,
+        "group_order": [
+          "T3",
+          "T1",
+          "T2",
+          "T4"
+        ],
+        "poses": [
+          "T3:r1:a5",
+          "T1:r1:a7",
+          "T2:r1:a1",
+          "T4:r1:a6"
+        ]
+      },
+      "query_reduction": 0.5083333333333333,
+      "screened_query_reduction_vs_full": 0.5333333333333333,
+      "screening_additional_query_reduction": 0.05084745762711862,
+      "runtime_ratio_screened_vs_lazy": 1.6094254362947815,
+      "runtime_ratio_lazy_vs_full": 0.500625775975314,
+      "one_shot_objective_loss": 0.7646394517324886,
+      "one_shot_feasible": true,
+      "screened_faster_than_lazy": false
+    },
+    {
+      "family": "rooms",
+      "seed": 2,
+      "targets": 4,
+      "candidates_per_target": 3,
+      "target_means": [
+        [
+          4.4,
+          1.2
+        ],
+        [
+          2.4,
+          3.6
+        ],
+        [
+          1.2,
+          5.6
+        ],
+        [
+          4.4,
+          3.2
+        ]
+      ],
+      "total_directed_edges": 120,
+      "full": {
+        "objective": 16.867528636766075,
+        "feasible": true,
+        "lower_bound": 16.867528636766075,
+        "upper_bound": 16.867528636766075,
+        "relative_gap": 0.0,
+        "exact_edge_evaluations": 120,
+        "total_possible_edges": 120,
+        "safely_pruned_edges": 0,
+        "runtime_seconds": 49.43406939999841,
+        "group_order": [
+          "T1",
+          "T4",
+          "T3",
+          "T2"
+        ],
+        "poses": [
+          "T1:r1:a0",
+          "T4:r1:a6",
+          "T3:r1:a4",
+          "T2:r1:a6"
+        ]
+      },
+      "one_shot": {
+        "objective": 17.379090191283026,
+        "feasible": true,
+        "lower_bound": 9.098664399067307,
+        "upper_bound": 17.379090191283026,
+        "relative_gap": 0.4764591069542295,
+        "exact_edge_evaluations": 4,
+        "total_possible_edges": 120,
+        "safely_pruned_edges": 0,
+        "runtime_seconds": 0.25516360001347493,
+        "group_order": [
+          "T1",
+          "T4",
+          "T2",
+          "T3"
+        ],
+        "poses": [
+          "T1:r1:a0",
+          "T4:r1:a6",
+          "T2:r1:a6",
+          "T3:r1:a3"
+        ]
+      },
+      "lazy": {
+        "objective": 16.867528636766078,
+        "feasible": true,
+        "lower_bound": 16.867528636766075,
+        "upper_bound": 16.867528636766078,
+        "relative_gap": 2.106244343973821e-16,
+        "exact_edge_evaluations": 77,
+        "total_possible_edges": 120,
+        "safely_pruned_edges": 0,
+        "runtime_seconds": 28.923299700007192,
+        "group_order": [
+          "T1",
+          "T4",
+          "T3",
+          "T2"
+        ],
+        "poses": [
+          "T1:r1:a0",
+          "T4:r1:a6",
+          "T3:r1:a4",
+          "T2:r1:a6"
+        ]
+      },
+      "screened": {
+        "objective": 16.867528636766078,
+        "feasible": true,
+        "lower_bound": 16.867528636766075,
+        "upper_bound": 16.867528636766078,
+        "relative_gap": 2.106244343973821e-16,
+        "exact_edge_evaluations": 62,
+        "total_possible_edges": 120,
+        "safely_pruned_edges": 58,
+        "runtime_seconds": 23.802965999988373,
+        "group_order": [
+          "T1",
+          "T4",
+          "T3",
+          "T2"
+        ],
+        "poses": [
+          "T1:r1:a0",
+          "T4:r1:a6",
+          "T3:r1:a4",
+          "T2:r1:a6"
+        ]
+      },
+      "query_reduction": 0.3583333333333333,
+      "screened_query_reduction_vs_full": 0.4833333333333333,
+      "screening_additional_query_reduction": 0.19480519480519476,
+      "runtime_ratio_screened_vs_lazy": 0.8229685494695633,
+      "runtime_ratio_lazy_vs_full": 0.5850883823860984,
+      "one_shot_objective_loss": 0.030328186513459032,
+      "one_shot_feasible": true,
+      "screened_faster_than_lazy": true
+    }
+  ]
+}

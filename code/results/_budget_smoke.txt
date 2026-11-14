@@ -1,0 +1,31 @@
+{
+  "family": "aisles",
+  "targets": 4,
+  "seed": 1,
+  "low": {
+    "cap": 50000,
+    "edges": 120,
+    "finite": 92,
+    "failed": 28,
+    "expanded_states": 617045,
+    "runtime_seconds": 29.91805029999523
+  },
+  "high": {
+    "cap": 200000,
+    "edges": 120,
+    "finite": 92,
+    "failed": 28,
+    "expanded_states": 617045,
+    "runtime_seconds": 29.85430720000295
+  },
+  "failed_at_low": 28,
+  "became_finite": 0,
+  "stayed_infinite": 28,
+  "changed_finite": 0,
+  "low_objective": 23.552343166465302,
+  "high_objective": 23.552343166465302,
+  "objective_delta": 0.0,
+  "same_route": true,
+  "became_finite_edges": []
+}
+

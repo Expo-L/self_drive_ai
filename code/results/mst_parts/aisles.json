@@ -1,0 +1,130 @@
+{
+  "status": "mst_screened_lazy_baseline",
+  "protocol": {
+    "families": [
+      "aisles"
+    ],
+    "targets": [
+      4,
+      5
+    ],
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "note": "IST*-style adapted baseline: MST bound over remaining groups replaces the exact grouped DP."
+  },
+  "attempted_instances": 6,
+  "valid_instances": 6,
+  "failures": [],
+  "overall": {
+    "instances": 6,
+    "mean_queries": 115.5,
+    "mean_total_edges": 157.5,
+    "mean_query_reduction": 0.2527777777777778,
+    "mean_pruned_edges": 37.666666666666664,
+    "mean_runtime_seconds": 31.867436566671433,
+    "mean_expanded_states": 600003.6666666666,
+    "max_objective_difference": 3.552713678800501e-15
+  },
+  "wall_clock_seconds": 191.85729779995745,
+  "instances": [
+    {
+      "family": "aisles",
+      "targets": 4,
+      "seed": 0,
+      "objective": 20.417834978212287,
+      "reference_objective": 20.417834978212284,
+      "exact_edge_evaluations": 83,
+      "total_possible_edges": 120,
+      "safely_pruned_edges": 37,
+      "expanded_states": 498632,
+      "failed_queries": 34,
+      "runtime_seconds": 28.37717910000356,
+      "lower_bound": 20.417834978212284,
+      "upper_bound": 20.417834978212287,
+      "relative_gap": 1.740005089957664e-16
+    },
+    {
+      "family": "aisles",
+      "targets": 4,
+      "seed": 1,
+      "objective": 23.552343166465306,
+      "reference_objective": 23.552343166465302,
+      "exact_edge_evaluations": 105,
+      "total_possible_edges": 120,
+      "safely_pruned_edges": 15,
+      "expanded_states": 563830,
+      "failed_queries": 25,
+      "runtime_seconds": 29.749014000000898,
+      "lower_bound": 23.552343166465302,
+      "upper_bound": 23.552343166465306,
+      "relative_gap": 1.5084332177441205e-16
+    },
+    {
+      "family": "aisles",
+      "targets": 4,
+      "seed": 2,
+      "objective": 28.08205790487629,
+      "reference_objective": 28.082057904876287,
+      "exact_edge_evaluations": 102,
+      "total_possible_edges": 120,
+      "safely_pruned_edges": 18,
+      "expanded_states": 646099,
+      "failed_queries": 35,
+      "runtime_seconds": 33.62174229999073,
+      "lower_bound": 28.082057904876287,
+      "upper_bound": 28.08205790487629,
+      "relative_gap": 1.2651187070530157e-16
+    },
+    {
+      "family": "aisles",
+      "targets": 5,
+      "seed": 0,
+      "objective": 24.565049732949262,
+      "reference_objective": 24.565049732949266,
+      "exact_edge_evaluations": 143,
+      "total_possible_edges": 195,
+      "safely_pruned_edges": 51,
+      "expanded_states": 850807,
+      "failed_queries": 42,
+      "runtime_seconds": 45.71466459997464,
+      "lower_bound": 24.565049732949266,
+      "upper_bound": 24.565049732949262,
+      "relative_gap": 0.0
+    },
+    {
+      "family": "aisles",
+      "targets": 5,
+      "seed": 1,
+      "objective": 18.427724826586466,
+      "reference_objective": 18.427724826586466,
+      "exact_edge_evaluations": 136,
+      "total_possible_edges": 195,
+      "safely_pruned_edges": 53,
+      "expanded_states": 501004,
+      "failed_queries": 22,
+      "runtime_seconds": 25.996295300021302,
+      "lower_bound": 18.427724826586466,
+      "upper_bound": 18.427724826586466,
+      "relative_gap": 0.0
+    },
+    {
+      "family": "aisles",
+      "targets": 5,
+      "seed": 2,
+      "objective": 21.471666127009687,
+      "reference_objective": 21.47166612700969,
+      "exact_edge_evaluations": 124,
+      "total_possible_edges": 195,
+      "safely_pruned_edges": 52,
+      "expanded_states": 539650,
+      "failed_queries": 22,
+      "runtime_seconds": 27.745724100037478,
+      "lower_bound": 21.47166612700969,
+      "upper_bound": 21.471666127009687,
+      "relative_gap": 0.0
+    }
+  ]
+}

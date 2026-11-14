@@ -1,0 +1,110 @@
+{
+  "status": "post_protocol_exploratory_safe_screening",
+  "method": "directed grouped forced-edge conditional lower-bound screening",
+  "configuration": {
+    "oracle": "proxy",
+    "targets": [
+      4
+    ],
+    "candidates": [
+      2
+    ],
+    "densities": [
+      "low",
+      "medium",
+      "high"
+    ],
+    "seeds": 1
+  },
+  "instances": 3,
+  "aggregate": {
+    "mean_query_reduction_vs_full": 0.4404761904761905,
+    "minimum_query_reduction_vs_full": 0.3035714285714286,
+    "mean_query_reduction_vs_route_only": 0.024675324675324666,
+    "minimum_query_reduction_vs_route_only": 0.0,
+    "instances_fewer_queries_than_route_only": 2,
+    "mean_safely_pruned_edges": 24.666666666666668,
+    "mean_runtime_ratio_to_route_only": 9.126105864311281
+  },
+  "records": [
+    {
+      "oracle": "proxy",
+      "targets": 4,
+      "candidates": 2,
+      "density": "low",
+      "seed": 0,
+      "full": {
+        "queries": 56,
+        "runtime_seconds": 0.00047400000039488077,
+        "expanded_states": 0
+      },
+      "route_only": {
+        "queries": 22,
+        "runtime_seconds": 0.005677100001776125,
+        "expanded_states": 0,
+        "query_reduction_vs_full": 0.6071428571428572
+      },
+      "screened": {
+        "queries": 21,
+        "safely_pruned_edges": 35,
+        "runtime_seconds": 0.028355299997201655,
+        "expanded_states": 0,
+        "query_reduction_vs_full": 0.625,
+        "query_reduction_vs_route_only": 0.045454545454545414
+      }
+    },
+    {
+      "oracle": "proxy",
+      "targets": 4,
+      "candidates": 2,
+      "density": "medium",
+      "seed": 0,
+      "full": {
+        "queries": 56,
+        "runtime_seconds": 0.0004794999986188486,
+        "expanded_states": 0
+      },
+      "route_only": {
+        "queries": 39,
+        "runtime_seconds": 0.01146590000280412,
+        "expanded_states": 0,
+        "query_reduction_vs_full": 0.3035714285714286
+      },
+      "screened": {
+        "queries": 39,
+        "safely_pruned_edges": 17,
+        "runtime_seconds": 0.13257879999582656,
+        "expanded_states": 0,
+        "query_reduction_vs_full": 0.3035714285714286,
+        "query_reduction_vs_route_only": 0.0
+      }
+    },
+    {
+      "oracle": "proxy",
+      "targets": 4,
+      "candidates": 2,
+      "density": "high",
+      "seed": 0,
+      "full": {
+        "queries": 56,
+        "runtime_seconds": 0.0006064999979571439,
+        "expanded_states": 0
+      },
+      "route_only": {
+        "queries": 35,
+        "runtime_seconds": 0.009949199993570801,
+        "expanded_states": 0,
+        "query_reduction_vs_full": 0.375
+      },
+      "screened": {
+        "queries": 34,
+        "safely_pruned_edges": 22,
+        "runtime_seconds": 0.10765790000004927,
+        "expanded_states": 0,
+        "query_reduction_vs_full": 0.3928571428571429,
+        "query_reduction_vs_route_only": 0.02857142857142858
+      }
+    }
+  ],
+  "caution": "This screening study was added after the frozen scaling protocol and is exploratory. It must be replicated on a preregistered larger suite before inferential claims."
+}

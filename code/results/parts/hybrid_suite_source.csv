@@ -1,0 +1,4 @@
+family,targets,seed,edges,query_reduction,screened_query_reduction,screening_gain,runtime_ratio_screened_vs_lazy,one_shot_loss,lazy_queries,screened_queries,full_queries,lazy_runtime,screened_runtime
+rooms,5,0,195,0.394872,0.451282,0.093220,0.923478,0.414393,118,107,195,50.793,46.906
+rooms,5,1,195,0.333333,0.497436,0.246154,0.688842,,130,98,195,61.487,42.355
+rooms,5,2,195,0.400000,0.441026,0.068376,0.743624,,117,109,195,65.447,48.668

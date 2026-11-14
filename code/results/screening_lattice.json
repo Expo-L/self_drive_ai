@@ -1,0 +1,345 @@
+{
+  "status": "post_protocol_exploratory_safe_screening",
+  "method": "directed grouped forced-edge conditional lower-bound screening",
+  "configuration": {
+    "oracle": "lattice",
+    "targets": [
+      4
+    ],
+    "candidates": [
+      2,
+      3
+    ],
+    "densities": [
+      "low",
+      "medium",
+      "high"
+    ],
+    "seeds": 2
+  },
+  "instances": 12,
+  "aggregate": {
+    "mean_query_reduction_vs_full": 0.6383928571428571,
+    "minimum_query_reduction_vs_full": 0.4107142857142857,
+    "mean_query_reduction_vs_route_only": 0.039112999382785334,
+    "minimum_query_reduction_vs_route_only": -0.03125,
+    "instances_fewer_queries_than_route_only": 7,
+    "mean_safely_pruned_edges": 57.083333333333336,
+    "mean_runtime_ratio_to_route_only": 1.5548844350931512
+  },
+  "records": [
+    {
+      "oracle": "lattice",
+      "targets": 4,
+      "candidates": 2,
+      "density": "low",
+      "seed": 0,
+      "full": {
+        "queries": 56,
+        "runtime_seconds": 0.1147082000024966,
+        "expanded_states": 30499
+      },
+      "route_only": {
+        "queries": 18,
+        "runtime_seconds": 0.015297899997676723,
+        "expanded_states": 5744,
+        "query_reduction_vs_full": 0.6785714285714286
+      },
+      "screened": {
+        "queries": 18,
+        "safely_pruned_edges": 38,
+        "runtime_seconds": 0.02528580000216607,
+        "expanded_states": 5744,
+        "query_reduction_vs_full": 0.6785714285714286,
+        "query_reduction_vs_route_only": 0.0
+      }
+    },
+    {
+      "oracle": "lattice",
+      "targets": 4,
+      "candidates": 2,
+      "density": "low",
+      "seed": 1,
+      "full": {
+        "queries": 56,
+        "runtime_seconds": 0.09275189999607392,
+        "expanded_states": 44296
+      },
+      "route_only": {
+        "queries": 21,
+        "runtime_seconds": 0.027377999998861924,
+        "expanded_states": 11754,
+        "query_reduction_vs_full": 0.625
+      },
+      "screened": {
+        "queries": 21,
+        "safely_pruned_edges": 35,
+        "runtime_seconds": 0.036777699999220204,
+        "expanded_states": 10724,
+        "query_reduction_vs_full": 0.625,
+        "query_reduction_vs_route_only": 0.0
+      }
+    },
+    {
+      "oracle": "lattice",
+      "targets": 4,
+      "candidates": 2,
+      "density": "medium",
+      "seed": 0,
+      "full": {
+        "queries": 56,
+        "runtime_seconds": 0.08930970000074012,
+        "expanded_states": 37958
+      },
+      "route_only": {
+        "queries": 21,
+        "runtime_seconds": 0.019327400004840456,
+        "expanded_states": 7782,
+        "query_reduction_vs_full": 0.625
+      },
+      "screened": {
+        "queries": 21,
+        "safely_pruned_edges": 35,
+        "runtime_seconds": 0.03347550000034971,
+        "expanded_states": 8011,
+        "query_reduction_vs_full": 0.625,
+        "query_reduction_vs_route_only": 0.0
+      }
+    },
+    {
+      "oracle": "lattice",
+      "targets": 4,
+      "candidates": 2,
+      "density": "medium",
+      "seed": 1,
+      "full": {
+        "queries": 56,
+        "runtime_seconds": 0.1990153000006103,
+        "expanded_states": 49257
+      },
+      "route_only": {
+        "queries": 21,
+        "runtime_seconds": 0.04646579999825917,
+        "expanded_states": 12180,
+        "query_reduction_vs_full": 0.625
+      },
+      "screened": {
+        "queries": 19,
+        "safely_pruned_edges": 37,
+        "runtime_seconds": 0.04789139999775216,
+        "expanded_states": 7801,
+        "query_reduction_vs_full": 0.6607142857142857,
+        "query_reduction_vs_route_only": 0.09523809523809523
+      }
+    },
+    {
+      "oracle": "lattice",
+      "targets": 4,
+      "candidates": 2,
+      "density": "high",
+      "seed": 0,
+      "full": {
+        "queries": 56,
+        "runtime_seconds": 0.13713329999882262,
+        "expanded_states": 41051
+      },
+      "route_only": {
+        "queries": 32,
+        "runtime_seconds": 0.07440420000057202,
+        "expanded_states": 19758,
+        "query_reduction_vs_full": 0.4285714285714286
+      },
+      "screened": {
+        "queries": 33,
+        "safely_pruned_edges": 23,
+        "runtime_seconds": 0.10416270000132499,
+        "expanded_states": 15718,
+        "query_reduction_vs_full": 0.4107142857142857,
+        "query_reduction_vs_route_only": -0.03125
+      }
+    },
+    {
+      "oracle": "lattice",
+      "targets": 4,
+      "candidates": 2,
+      "density": "high",
+      "seed": 1,
+      "full": {
+        "queries": 56,
+        "runtime_seconds": 0.1591074000025401,
+        "expanded_states": 46509
+      },
+      "route_only": {
+        "queries": 20,
+        "runtime_seconds": 0.04664619999675779,
+        "expanded_states": 12373,
+        "query_reduction_vs_full": 0.6428571428571428
+      },
+      "screened": {
+        "queries": 19,
+        "safely_pruned_edges": 37,
+        "runtime_seconds": 0.048746699998446275,
+        "expanded_states": 7878,
+        "query_reduction_vs_full": 0.6607142857142857,
+        "query_reduction_vs_route_only": 0.050000000000000044
+      }
+    },
+    {
+      "oracle": "lattice",
+      "targets": 4,
+      "candidates": 3,
+      "density": "low",
+      "seed": 0,
+      "full": {
+        "queries": 120,
+        "runtime_seconds": 0.22293309999804478,
+        "expanded_states": 64831
+      },
+      "route_only": {
+        "queries": 36,
+        "runtime_seconds": 0.06041830000322079,
+        "expanded_states": 12365,
+        "query_reduction_vs_full": 0.7
+      },
+      "screened": {
+        "queries": 35,
+        "safely_pruned_edges": 85,
+        "runtime_seconds": 0.12489559999812627,
+        "expanded_states": 12264,
+        "query_reduction_vs_full": 0.7083333333333333,
+        "query_reduction_vs_route_only": 0.02777777777777779
+      }
+    },
+    {
+      "oracle": "lattice",
+      "targets": 4,
+      "candidates": 3,
+      "density": "low",
+      "seed": 1,
+      "full": {
+        "queries": 120,
+        "runtime_seconds": 0.3332391000003554,
+        "expanded_states": 98282
+      },
+      "route_only": {
+        "queries": 38,
+        "runtime_seconds": 0.08826179999596206,
+        "expanded_states": 20197,
+        "query_reduction_vs_full": 0.6833333333333333
+      },
+      "screened": {
+        "queries": 36,
+        "safely_pruned_edges": 84,
+        "runtime_seconds": 0.14340430000447668,
+        "expanded_states": 15450,
+        "query_reduction_vs_full": 0.7,
+        "query_reduction_vs_route_only": 0.052631578947368474
+      }
+    },
+    {
+      "oracle": "lattice",
+      "targets": 4,
+      "candidates": 3,
+      "density": "medium",
+      "seed": 0,
+      "full": {
+        "queries": 120,
+        "runtime_seconds": 0.2694684000016423,
+        "expanded_states": 79019
+      },
+      "route_only": {
+        "queries": 40,
+        "runtime_seconds": 0.07086979999439791,
+        "expanded_states": 14830,
+        "query_reduction_vs_full": 0.6666666666666667
+      },
+      "screened": {
+        "queries": 36,
+        "safely_pruned_edges": 84,
+        "runtime_seconds": 0.13578389999747742,
+        "expanded_states": 13246,
+        "query_reduction_vs_full": 0.7,
+        "query_reduction_vs_route_only": 0.09999999999999998
+      }
+    },
+    {
+      "oracle": "lattice",
+      "targets": 4,
+      "candidates": 3,
+      "density": "medium",
+      "seed": 1,
+      "full": {
+        "queries": 120,
+        "runtime_seconds": 0.36943470000551315,
+        "expanded_states": 108341
+      },
+      "route_only": {
+        "queries": 36,
+        "runtime_seconds": 0.08301930000016,
+        "expanded_states": 18714,
+        "query_reduction_vs_full": 0.7
+      },
+      "screened": {
+        "queries": 34,
+        "safely_pruned_edges": 86,
+        "runtime_seconds": 0.13433529999747407,
+        "expanded_states": 14220,
+        "query_reduction_vs_full": 0.7166666666666667,
+        "query_reduction_vs_route_only": 0.05555555555555558
+      }
+    },
+    {
+      "oracle": "lattice",
+      "targets": 4,
+      "candidates": 3,
+      "density": "high",
+      "seed": 0,
+      "full": {
+        "queries": 120,
+        "runtime_seconds": 0.28895980000379495,
+        "expanded_states": 86918
+      },
+      "route_only": {
+        "queries": 67,
+        "runtime_seconds": 0.17604189999838127,
+        "expanded_states": 41978,
+        "query_reduction_vs_full": 0.44166666666666665
+      },
+      "screened": {
+        "queries": 59,
+        "safely_pruned_edges": 61,
+        "runtime_seconds": 0.2783010999992257,
+        "expanded_states": 29037,
+        "query_reduction_vs_full": 0.5083333333333333,
+        "query_reduction_vs_route_only": 0.11940298507462688
+      }
+    },
+    {
+      "oracle": "lattice",
+      "targets": 4,
+      "candidates": 3,
+      "density": "high",
+      "seed": 1,
+      "full": {
+        "queries": 120,
+        "runtime_seconds": 0.3542324000009103,
+        "expanded_states": 100970
+      },
+      "route_only": {
+        "queries": 40,
+        "runtime_seconds": 0.10182440000062343,
+        "expanded_states": 24392,
+        "query_reduction_vs_full": 0.6666666666666667
+      },
+      "screened": {
+        "queries": 40,
+        "safely_pruned_edges": 80,
+        "runtime_seconds": 0.1677854000008665,
+        "expanded_states": 18679,
+        "query_reduction_vs_full": 0.6666666666666667,
+        "query_reduction_vs_route_only": 0.0
+      }
+    }
+  ],
+  "caution": "This screening study was added after the frozen scaling protocol and is exploratory. It must be replicated on a preregistered larger suite before inferential claims."
+}
